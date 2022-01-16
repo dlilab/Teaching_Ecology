@@ -17,5 +17,7 @@ title: Principles of Ecology
 
 **Classroom**: [William's 202](https://www.google.com/maps/place/Williams+Hall/@30.4124295,-91.179734,17.11z/data=!4m5!3m4!1s0x8626a7217676d7ad:0xcf801c0f1a3d0ab8!8m2!3d30.4104184!4d-91.1777712)
 
+**Zoom link**: https://lsu.zoom.us/j/97210590372
+
 **Office hours**: Tuesday 12-1pm or by appointment (virtual)
 

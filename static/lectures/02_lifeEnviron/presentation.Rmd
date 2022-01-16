@@ -41,7 +41,6 @@ background-position: 90% 50%
 background-size: contain
 class: left, top
 
-
 # .blue[Biomes]
 
 ---
@@ -57,6 +56,20 @@ class: left, top
 how does a particular environment result in similar plants? selective pressure lead to similar functional traits through evolution
 
 why defined by plants? plants form the foundation of life on earth; they are primary producers
+
+---
+
+# Primary productivity on Land
+
+![](figs/npp.png)
+
+---
+
+# Primary productivity in Oceans
+
+### Almost half of all primary productivity on Earth
+
+![](figs/ocean_production.png)
 
 ---
 
@@ -91,4 +104,340 @@ while the global distribution of biomes is determined by climate, what determine
 ### 2. Revolution of the Earth around the Sun on a tilted axis (seasons)
 
 .center[![:scale 95%](figs/earth_orbit.png)]
+
+<!-- ![](https://upload.wikimedia.org/wikipedia/commons/5/58/Earth_tilt_animation.gif) -->
+
+---
+
+# Seasons
+
+![](figs/tmp.gif)
+
+---
+
+# What is the main cause of winds?
+
+.font200[
+a. the rotation of the earth around the sun  
+b. the rotation of the earth on its axis  
+c. the differential heating and cooling of different geographical locations on earth
+]
+
+---
+background-image: url('figs/hot_air.png')
+background-position: 0% 50%
+background-size: contain
+class: right, middle
+
+.pull-right[
+## Hot air expands & rises
+
+## As air rises, it expands and cools
+]
+
+---
+
+# Wind is caused by differential heating of the Earth’s surface
+
+![](figs/fire_air.png)
+
+---
+background-image: url('figs/sun_heat.png')
+background-position: 0% 50%
+background-size: contain
+class: right, middle
+
+.pull-right[
+## Wind is caused by differential heating of the Earth’s surface
+]
+
+---
+
+![](figs/wind.png)
+
+---
+
+# Major Determinants of Global Climate
+
+### 3. Rotation of Earth about Earth’s axis. Creates **Coriolis effects** (conservartion of momentum)
+
+.pull-left[
+![](figs/coriolis_1.png)
+]
+
+.pull-right[
+![](figs/coriolis_2.png)
+]
+
+---
+
+# Air circulation patterns (surface)
+
+.pull-left[
+![](figs/coriolis_3.png)
+]
+
+.pull-right[![](figs/wind.png)]
+
+---
+
+## Ocean currents are driven by winds and redistribute heat, and modified by Coriolis effects
+
+![](http://www.coastalwiki.org/w/images/thumb/f/f4/Ocean-Currents_gkplanet.jpg/800px-Ocean-Currents_gkplanet.jpg)
+
+---
+
+# Rising warm airs --> Rain 
+
+![](https://anessoriginal.files.wordpress.com/2014/09/convection-rain.png?w=640)
+
+---
+
+![](figs/precip.gif)
+
+---
+
+## Why does it rain on the windward side of mountains, and why is it dry on the leeward side?
+
+![:scale 80%](figs/mountain.png)
+
+.right[Kauai 22° N]
+
+---
+
+# Rain shadow effect
+
+![](figs/Rain_shadow_effect.jpeg)
+
+---
+background-image: url('figs/Rain_shadow_effect2.png')
+background-position: 0% 50%
+background-size: contain
+class: right, bottom
+
+# Rain shadow effect
+
+---
+background-image: url('figs/deserts.png')
+background-position: 0% 50%
+background-size: contain
+class: center, top
+
+# Climate and World Biomes
+
+---
+background-image: url('figs/biomes_shape.jpg')
+background-position: 0% 50%
+background-size: contain
+class: right, top
+
+.pull-right[
+## Terrestrial biomes largely determined by temperature and precipitation
+]
+
+---
+
+# Tropical rain forests
+
+
+.pull-left[
+.middle[![](figs/tropic_rain_forest.jpg)]
+]
+
+.pull-right[
+.font150[
+
+Dominant canopy plants: broad-leaved evergreen trees
+
+Also epiphytes, lianas, palms, and generally sparse understory
+
+More-or-less continuous 
+growing season
+
+Contain ~50% of Earth’s species & ~37% of terrestrial carbon in ~11% of terrestrial veg. cover
+]
+]
+
+---
+
+# Tropical seasonal forests and savannas
+
+.pull-left[
+.middle[![](figs/tropical_seasonal.jpg)]
+]
+
+.pull-right[
+.font150[
+Tropical dry forests
+
+Thorn woodlands
+
+Tropical savannas
+
+Generally smaller-stature trees and more deciduousness than in rain forests
+
+Resource availability, fire & large herbivores help determine the balance between grasses vs. woody species 
+
+Pronounced wet / dry seasons
+]
+]
+
+---
+
+# Deserts
+
+.pull-left[
+.middle[![](figs/deserts.jpg)]
+]
+
+.pull-right[
+.font150[
+Populations of plants & animals are often sparse (owing to resource limitation)
+
+Succulence (fleshy water-storage tissue in leaves, stems, etc.) is common among the plants
+
+Sustained periods of high temp. & low water avail.
+
+]
+]
+
+---
+
+# Temperate Grasslands
+
+.pull-left[
+.middle[![](figs/grasslands.jpg)]
+]
+
+.pull-right[
+.font150[
+Dominant plants = grasses
+
+Greater temp. variation than tropics
+
+Relatively warm, moist summers & cold, dry winters
+
+Some have sufficient rainfall to support woody veg., but fire & grazers maintain grasslands
+
+Soils rich in organic matter (especially from proliferation of grass roots)
+
+]
+]
+
+---
+
+# Temperate Shrubland and Woodlands
+
+.pull-left[
+.middle[![](figs/shrubland.jpg)]
+]
+
+.pull-right[
+.font150[
+Winter rainy season (e.g., Mediterranean-type climates – water and temperature conditions for growth are somewhat asynchronous)
+
+Fire is a common feature
+
+Evergreen, sclerophyllous (tough, leathery) leaves are common
+]
+]
+
+---
+
+# Temperate Deciduous Forests
+
+.pull-left[
+.middle[![](figs/temp_forest.jpg)]
+]
+
+.pull-right[
+.font150[
+Tree-dominated
+
+Deciduous leaves owing to freezing temperatures
+
+Sufficient rainfall & soil fertility to support tree growth (trees largely outcompete grasses)
+
+]
+]
+
+---
+
+# Temperate Evergreen Forests
+
+.pull-left[
+.middle[![](figs/temp_evergreen.jpg)]
+]
+
+.pull-right[
+.font150[
+From warm coastal zones to cool maritime or continental climates
+
+Generally on nutrient-poor soils
+
+Northern Hemisphere – 
+needle-leaved conifers
+
+Southern Hemisphere – 
+needle-leaved & broad-leaved trees
+
+]
+]
+
+---
+
+# Boreal Forests / Taiga
+
+.pull-left[
+.middle[![](figs/boreal.jpg)]
+]
+
+.pull-right[
+.font150[
+Generally above 50º N latitude
+
+Coniferous tree species in continental climate zones and deciduous birch forests in some maritime zones
+
+Extreme weather
+
+Permafrost common
+
+Largest terrestrial biome, with ~33% of forested land
+
+]
+]
+
+???
+
+Immense carbon pool
+
+---
+
+# Tundra
+
+.pull-left[
+.middle[![](figs/tandra.jpg)]
+]
+
+.pull-right[
+.font150[
+Beyond latitudinal tree line, e.g., above ~65º N latitude
+
+Dominated by sedges, grasses, forbs, lichens, mosses 
+& prostrate shrubs
+
+Primarily in the Arctic
+
+Extreme weather and adaptations for prolonged dormancy
+
+Permafrost very common
+]
+]
+
+---
+
+# Mountains: A Diversity of Biomes
+
+![](figs/mountains.png)
+.right[[Elsen et al. 2018](https://paulelsen.files.wordpress.com/2019/10/elsen-et-al.-pnas-2018.pdf)]
 
