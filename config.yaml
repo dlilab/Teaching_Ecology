@@ -1,7 +1,7 @@
 baseURL: "/" 
 languageCode: en-us
 defaultContentLanguage: en
-title: Intro to Data Science 
+title: Principles of Ecology 
 theme: "cupper-hugo-theme"
 googleAnalytics: UA-123456789-1
 disqusShortname: yourdiscussshortname
@@ -44,14 +44,12 @@ menu:
     - name: Syllabus 
       url: /syllabus/
       weight: 2
-    - name: Schedule & Materials
-      url: /schedule_materials/
-      weight: 3
     - name: Final project
       url: /project/
+      weight: 3
+    - name: Schedule & Materials
+      url: /schedule_materials/
       weight: 4
-
-
 
 markup:
   defaultMarkdownHandler: goldmark
