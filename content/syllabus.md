@@ -113,7 +113,7 @@ If you must have more than one excused absence, then in consultation we will det
 
 ### Final project (25%)
 
-The final project will demonstrate your knowledge of the course content and beyond. It will be a full report in an _R Makrdown_ format, mixed text with code, results, figures, tables, citations, etc. The final report should be in high quality and publishable with some additional effort later. The final project should be hosted on Github, organized as we discussed in class and should be fully reproducible. This means that I can clone your repository and re-run your files on my computer and get the same results. **The final project deadline is December 3rd.** More information about it can be found [here](/).
+More information about it can be found [here](/project/).
 
 ### Grading
 
