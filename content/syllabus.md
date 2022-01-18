@@ -103,6 +103,8 @@ If you must miss an exam for a university-condoned reason, you must request prio
 
 __As a rule, no make-up exams will be allowed.__
 
+__You cannot drop the final exam!__
+
 If you take all four exams, then the lowest score will be dropped to calculate your final grade.
 
 If you miss an exam with an excused absence, then the missed exam will be dropped to calculate your final grade.

@@ -64,5 +64,5 @@ td, th {
 |      | Apr. 28 | Work on final project - buffer lecture |        |       |         |
 |  16  | May  03 | Final project presentation (1)         |        |       |         |
 |      | May  05 | Final project presentation (2)         |        |       |         |
-|  17  | May  10 | __Final exam__                         |        |       |         |
+|  17  | May  09 | __Final exam (3-5pm)__                 |        |       |         |
 |  18  | May  17 | Final grades due                       |        |       |         |

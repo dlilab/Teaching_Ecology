@@ -55,7 +55,7 @@ vec <- c(0)
 for(i in 1:100){
   vec[i+1] <- vec[i]+i
 }
-
+vec
 #there are many different ways to do the same thing
 cumsum(1:100)
 ```
@@ -63,7 +63,7 @@ cumsum(1:100)
 ### Conditional statements
 
 ```{r}
-name <- 'tad'
+name = 'Tad'
 
 if(name == 'tad'){
   print('Hello, tad')
@@ -93,7 +93,7 @@ Sample size of n = 10
 a <- rnorm(10, 1, 0.5)
 b <- rnorm(10, 1.5, 0.5)
 
-h <- hist(a, las=1, col=grey(0.1,0.9), 
+hist(a, las=1, col=grey(0.1,0.9), 
   breaks=seq(-0.75, 3.75, length.out=30), 
   main='', xlab='Values of a or b')
 hist(b, add=TRUE, breaks=h$breaks, 
@@ -108,7 +108,7 @@ Sample size of n = 500
 a2 <- rnorm(500, 1, 0.5)
 b2 <- rnorm(500, 1.5, 0.5)
 
-h <- hist(a2, las=1, col=grey(0.1,0.9),
+hist(a2, las=1, col=grey(0.1,0.9),
   breaks=seq(-0.75, 3.75, length.out=30), 
   main='', xlab='Values of a or b')
 
