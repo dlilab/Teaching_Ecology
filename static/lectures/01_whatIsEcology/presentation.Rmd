@@ -26,6 +26,8 @@ class: left, center, inverse
 
 .font300[Announcements]  
 
+## Note takers??
+
 
 ---
 background-image: url('figs/li.JPG')
