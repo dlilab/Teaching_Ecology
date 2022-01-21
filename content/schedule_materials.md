@@ -34,7 +34,7 @@ td, th {
 | Week |  Date   | Topic                                  | Slides | Notes | Reading |
 |:----:|:-------:|:---------------------------------------|:------:|:-----:|:-------:|
 |  1   | Jan. 18 | About this course                      | <a href="../lectures/01_whatIsEcology/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>       |  <a href="../lectures/01_whatIsEcology/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/01_whatIsEcology/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>      | <a href="http://www.owlnet.rice.edu/~cainproj/courses/HowToReadSciArticle.pdf" target="_blank" title="How to read a scientific article"><i class="fas fa-book-reader"></i></a> <a href="https://www.esa.org/about/what-does-ecology-have-to-do-with-me/" target="_blank" title="What does ecology have to do with me?"><i class="fas fa-book-reader"></i></a> |
-|      | Jan. 20 | What is Ecology                        |        |       |         |
+|      | Jan. 20 | What is Ecology                        |  ☝️   |   ☝️  |    ☝️   |
 |  2   | Jan. 25 | Life and the Environment               |        |       |         |
 |      | Jan. 27 | Population dynamics (1)                |        |       |         |
 |  3   | Feb. 01 | Population dynamics (2)                |        |       |         |
