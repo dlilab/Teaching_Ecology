@@ -1,5 +1,6 @@
 ALL: 01_whatIsEcology/notes.pdf 01_whatIsEcology/notes.html 01_whatIsEcology/presentation.html \
-		 01_whatIsEcology/Rcode.pdf 01_whatIsEcology/Rcode.html 02_lifeEnviron/presentation.html
+		 01_whatIsEcology/Rcode.pdf 01_whatIsEcology/Rcode.html 02_lifeEnviron/presentation.html \
+		 03_popDynamics/notes.pdf 03_popDynamics/notes.html
 
 OStype := $(shell uname -s)
 
