@@ -180,7 +180,6 @@ logisticDynamics <- function(n,r,k, steps=100){
 
 
 ```{r}
-
 stps <- 20
 
 plot(1:stps,
@@ -194,21 +193,15 @@ plot(1:stps,
 # lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='firebrick')
 #})
 
-
-sapply(seq(5,30,by=1), function(x){
+x = sapply(seq(5,30,by=1), function(x){
  lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='dodgerblue')
 })
 
-sapply(seq(5,30,by=1), function(x){
+x = sapply(seq(5,30,by=1), function(x){
  lines(logisticDynamics(n=x, r=rep(c(0.5,1.5),5), k=30, steps=stps), col='firebrick')
 })
 
-
-
 ```
-
-
-
 
 
 
@@ -218,7 +211,6 @@ r=0
 
 
 ```{r}
-
 stps <- 20
 
 plot(1:stps,
@@ -228,26 +220,20 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
-sapply(seq(1,25,by=1), function(x){
+x = sapply(seq(1,25,by=1), function(x){
  lines(logisticDynamics(n=x, r=0, k=30, steps=stps), col='firebrick')
 })
 
-sapply(seq(35,100,by=5), function(x){
+x = sapply(seq(35,100,by=5), function(x){
  lines(logisticDynamics(n=x, r=0, k=30, steps=stps), col='dodgerblue')
 })
 
 ```
 
 
-
-
-
-
-
 r=1.5
 
 ```{r}
-
 stps <- 20
 
 plot(1:stps,
@@ -257,21 +243,14 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
-sapply(seq(1,25,by=1), function(x){
+x = sapply(seq(1,25,by=1), function(x){
  lines(logisticDynamics(n=x, r=1.5, k=30, steps=stps), col='firebrick')
 })
 
-sapply(seq(35,100,by=5), function(x){
+x = sapply(seq(35,100,by=5), function(x){
  lines(logisticDynamics(n=x, r=1.5, k=30, steps=stps), col='dodgerblue')
 })
-
-
 ```
-
-
-
-
-
 
 
 r=2
@@ -294,27 +273,20 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
-sapply(seq(1,25,by=1), function(x){
+x = sapply(seq(1,25,by=1), function(x){
  lines(logisticDynamics(n=x, r=2, k=30, steps=stps), col='firebrick')
 })
 
-sapply(seq(35,100,by=5), function(x){
+x = sapply(seq(35,100,by=5), function(x){
  lines(logisticDynamics(n=x, r=2, k=30, steps=stps), col='dodgerblue')
 })
-
-
 ```
-
-
-
-
 
 (between 3 and 3.449 -- oscillates between 2 values)
 
 r=3.2
 
 ```{r}
-
 stps <- 20
 
 plot(1:stps,
@@ -325,17 +297,11 @@ plot(1:stps,
   col=1)
 
 
-sapply(seq(1,100,by=5), function(x){
+x = sapply(seq(1,100,by=5), function(x){
  lines(logisticDynamics(n=x, r=3.2, k=30, steps=stps), col='firebrick')
 })
 
 ```
-
-
-
-
-
-
 
 
 
@@ -360,9 +326,7 @@ plot(1:stps,
   xlab='Time', 
   ylab='Population size', 
   col=1)
-
 ```
-
 
 
 
