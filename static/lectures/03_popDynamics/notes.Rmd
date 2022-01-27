@@ -87,6 +87,8 @@ $\lambda = 1$, $r = 0$: population unchanging
 
 $\lambda > 1$, $r > 0$: population increase to infinity 
 
+![](figs/growth_r.png)
+
 ### Equilibria
 
 $N = 0, r > 0$ (unstable)
@@ -107,6 +109,10 @@ Exponential growth model forms the cornerstone of population density. Even thoug
 
 
 ## Logistic growth
+
+“No population can increase in size forever.”
+
+Number of atoms in the universe (finite mass) is around $10^{80}$. Exponential growth potential of _E. coli_: beginning with 1 cell, 6 days for population >$10^{80}$ cells.
 
 It may be more realistic to assume that populations intrinsically limit themselves. That is, competition for space, resources, and mates, produces an upper limit to the population size (but not the growth rate). One way to think about this is that you can have a garden in which the number of individual plants is limited by available space or light, but the growth rates of each of the individual plants could be independent of these effects. 
 
