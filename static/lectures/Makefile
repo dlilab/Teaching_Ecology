@@ -1,6 +1,6 @@
 ALL: 01_whatIsEcology/notes.pdf 01_whatIsEcology/notes.html 01_whatIsEcology/presentation.html \
 		 01_whatIsEcology/Rcode.pdf 01_whatIsEcology/Rcode.html 02_lifeEnviron/presentation.html \
-		 03_popDynamics/notes.pdf 03_popDynamics/notes.html
+		 03_popDynamics/notes.pdf 03_popDynamics/notes.html 03_popDynamics/Rcode.html 03_popDynamics/presentation.html
 
 OStype := $(shell uname -s)
 
@@ -17,7 +17,8 @@ endif
 	$(view) $@
 
 %.html: %.Rmd
-	Rscript -e 'rmarkdown::render("$<")'
+	if [[ $< == *notes* ]]; then Rscript -e 'rmarkdown::render("$<", output_format = "tufte::tufte_html")'; fi
+	if [[ $< == *Rcode* || $< == *presentation* ]]; then Rscript -e 'rmarkdown::render("$<")'; fi
 	$(view) $@
 			
 clean:

@@ -96,8 +96,11 @@ $N = 0, r < 0$ (stable)
 ### Assumptions of the exponential model:
 
 + No immigration or emigration
-+ Constant $r$ (b-d)
++ Constant $r$ (b-d); which means unlimited resources
 + No age, size, or genetic structure (all individuals are functionally equivalent)
++ Continuous growth without time lags
+
+Exponential growth model forms the cornerstone of population density. Even though no population can increase exponentially forever, all populations have the _potential_ for exponential growth.
 
 
 \clearpage
