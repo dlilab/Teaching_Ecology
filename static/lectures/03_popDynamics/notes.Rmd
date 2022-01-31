@@ -269,20 +269,22 @@ Elements of the square matrix correspond to the production of (row) by (column).
   & J & T & A \\
   \hline
 J & $F_{J}$  &  $F_{T}$  & $F_{A}$ \\
-T & $S_{J}$  & -         & -      \\
-A & -        & $S_{T}$   & $S_{A}$  \\
+T & $P_{J,T}$  & 0         & 0      \\
+A & 0        & $P_{T,A}$   & $P_{A,A}$  \\
 \hline
 \end{tabular}
 \end{table}
 
-Here, we have fecundity $F_{i}$, and stage transition rates ($S_{i}$). It is important to note that fecundity is different from birth rates discussed earlier. Here, fecundity captures both survival _and_ birth rate. 
+Here, we have fecundity $F_{i}$, and stage transition rates ($P_{i,j}$). It is important to note that fecundity is different from birth rates discussed earlier. Here, fecundity captures both survival _and_ birth rate. 
 
 So we can use the transition matrix to simulate stage-structured population dynamics. How we do this is by using matrix multiplication, as follows. We have a 1 column matrix containing the initial population sizes for all life stages. 
 
 \begin{equation*}
 \mathbf{n}^{0}=%
 \begin{bmatrix}
-n_{J} & n_{T} & n_{A} \\
+n_{J} \\
+n_{T} \\
+n_{A} \\
 \end{bmatrix}
 \end{equation*}
 
@@ -292,17 +294,20 @@ We can simply multiply this one column matrix by the transition matrix,
 
 \begin{equation*}
 \begin{bmatrix}
-n_{J, t+1} \\ 
-n_{T, t+1} \\ 
+n_{J, t+1} \\
+n_{T, t+1} \\
 n_{A, t+1} \\
 \end{bmatrix}
-= \mathbf{N} * \mathbf{M} = \begin{bmatrix}
-n_{J, t} & n_{T, t} & n_{A, t} \\
-\end{bmatrix} * \begin{bmatrix}
+= \mathbf{M} * \mathbf{N} = \begin{bmatrix}
 F_{J}  & F_{T}  & F_{A}  \\
-S_{J}  & 0      & 0      \\
-0       & S_{T}  & S_{A}  \\
-\end{bmatrix}
+P_{J,T}  & 0      & 0      \\
+0       & P_{T,A}  & P_{A,A}  \\
+\end{bmatrix} * 
+\begin{bmatrix}
+n_{J, t} \\
+n_{T, t} \\
+n_{A, t} \\
+\end{bmatrix} 
 \end{equation*}
 
 
@@ -311,9 +316,9 @@ where $\mathbf{N}$ is the population size matrix and $\mathbf{M}$ is the transit
 
 \begin{equation}
 \begin{bmatrix}
-n_{J}* F_{J} \ \  + \ \ n_{T} * F_{T}   \ \  + \ \  n_{A} * F_{A} \\
-n_{J}* S_{J} \ \ + \ \  n_{T} * 0      \ \   + \ \  n_{A} * 0    \\
-n_{J}* 0     \ \ + \ \  n_{T} * S_{T}  \ \   +  \ \ n_{A} * S_{A}    \\
+F_{J} * n_{J,t} \ \  + \ \ F_{T} * n_{T,t}  \ \  + \ \   F_{A} * n_{A,t} \\
+P_{J,T} * n_{J,t} \ \ + \ \  0 * n_{T,t}      \ \   + \ \  0 * n_{A,t}   \\
+0 * n_{J,t}    \ \ + \ \  P_{T,A} * n_{T,t}  \ \   +  \ \ P_{A,A} * n_{A,t} \\
 \end{bmatrix}
 \end{equation}
 
@@ -346,16 +351,18 @@ Let's simulate the model 1 timestep forward, beginning with the abundance matrix
 
 \begin{equation*}
 \mathbf{N}_{t}= \begin{bmatrix}
-n_{J, t} = 20  & n_{T, t} = 10 & n_{A, t} = 0  \\
+n_{J, t} = 20  \\
+n_{T, t} = 10 \\
+n_{A, t} = 0  \\
 \end{bmatrix}
 \end{equation*}
 
 
 \begin{equation}
-\mathbf{N}_{t} * \mathbf{M} = \begin{bmatrix}
-(20 * 0.3) \ + \ (10 * 0.5) \ + \ (0 * 2)     \\
-(20 * 0.2) \ + \ (10 * 0 ) \ + \ (0 * 0)    \\
-(20 * 0 ) \ + \ (10 * 0.3) \ + \ (0 * 0)   \\
+\mathbf{M} * \mathbf{N}_{t} = \begin{bmatrix}
+(0.3 * 20 \ + \ (0.5 * 10) \ + \ (2 * 0)     \\
+(0.2 * 20) \ + \ (0 * 10) \ + \ (0 * 0)    \\
+(0 * 20) \ + \ (0.3 * 10) \ + \ (0 * 0)   \\
 \end{bmatrix} = \begin{bmatrix}
 n_{J, t+1} = 11 \\ 
 n_{T, t+1} =  4 \\ 
