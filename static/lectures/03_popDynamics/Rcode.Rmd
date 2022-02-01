@@ -339,21 +339,22 @@ First, build a simple projection matrix
 ```{r}
 
 projMatrix <- matrix(
-  c(
-    0.2,     1,    0.25,
+  c(0.2,     1,    0.25,
     0.3,     0,    0,
-    0,       0.3,  0.6
-  )
-  ,nrow=3,ncol=3,byrow=T
+    0,       0.3,  0.6)
+  ,
+  nrow = 3,
+  ncol = 3,
+  byrow = TRUE
 )
 
-abund0 <- matrix(c(20,20,20), ncol=1)
+abund0 <- matrix(c(20, 20, 20), ncol = 1)
 ```
 
 Simulate one generation into the future.
 
 ```{r}
-abund1 <- projMatrix  %*% abund0 
+abund1 <- projMatrix %*% abund0 
 ```
 
 Simulate one more generation 
