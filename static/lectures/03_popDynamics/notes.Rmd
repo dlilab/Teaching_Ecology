@@ -209,7 +209,7 @@ The term $g(x)$ is the probability that an individual of age $x$ survives to age
 
 **Survivorship curves**
 
-```{r}
+```{r, out.width='80%'}
 knitr::include_graphics("figs/survivorship.jpg")
 ```
 
@@ -236,7 +236,7 @@ $G$ is the generation time, which is quantified as the average age of parents of
 
 $$ G = \frac{\Sigma_{x=0}^{k} l(x)b(x)x}{\Sigma_{x=0}^{k} l(x)b(x)} $$
 
-$ G = ? $ in Table \@ref(tab:lifeTable).
+_G = ?_ in Table \@ref(tab:lifeTable).
 
 From $R_0$ and $G$, we can compute $r$ and $\lambda$
 
