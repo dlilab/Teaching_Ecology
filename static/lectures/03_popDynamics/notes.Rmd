@@ -183,56 +183,75 @@ The above models assume that all individuals are functionally equivalent. That i
 
 Originally designed for insurance companies, this is a way to track demographic rates through time, partitioning things by the age of the organism. 
 
+![](figs/life_table.png)
 
-\begin{table}[h!]
-\centering
-\caption{Life table}
-\vspace{0.5cm}
-\begin{tabular}{cccccc}
-\hline
-age (x) & S(x) & l(x) & b(x) & $l(x)b(x)$ & $l(x)b(x)x$ \\
-\hline
-0 & 500 & 1   & 0  & 0 & 0   \\
-1 & 400 & 0.8 & 0.5  & 0.4 & 0.4 \\
-2 & 200 & 0.4 & 0.25 & 0.3 & 0.6 \\
-3 & 50  & 0.2 & 1  & 0.2  &  0.6 \\
-4 & 10  & 0.1 & 2 & 0.2  &  0.8 \\
-\hline
-\end{tabular}
-\end{table}
+```{r, lifeTable}
+knitr::kable(
+  lt <- tibble::tibble(
+    `age (x)` = c(0:4),
+    `S(x)` = c(500, 400, 200, 50, 0),
+    `b(x)` = c(0, 2, 3, 1, 0),
+    `l(x)=S(x)/S(0)` = `S(x)`/500,
+    `g(x)=l(x+1)/l(x)` = c(0.8, 0.5, 0.25, 0, NA),
+    `l(x)b(x)` = `l(x)=S(x)/S(0)` * `b(x)`,
+    `l(x)b(x)x` = `l(x)b(x)` * `age (x)`
+  ), caption = "Life table of a hypothetic population.", booktabs = TRUE
+)
+```
 
+The term $S(x)$ refers to the number of individuals from a particular cohort that are still alive at age $x$ (**cohort survival**). 
 
-The term $S(x)$ refers to the number of individuals from a particular cohort that are still alive at age $x$. 
+The term $b(x)$ represents the per-capital birth rate for females of age $x$. This is the number of female offspring generated from one female individual of age $x$. For example $b(6) = 3$ would indicate that a female of age 6 will give birth to an _average_ of 3 female offspring. $b(x)$ also is referred to as **fecundity schedule**.
 
+The term $l(x)$ represents the probability that an individual survives from age 0 (birth) to the *beginning* of age $x$. This is called **survival rate** or survival schedule. $l(x)=S(x)/S(0)$
 
-The term $l(x)$ represents the probability of surviving from age $x$ to age $x+1$. This is called survival rate.
+The term $g(x)$ is the probability that an individual of age $x$ survives to age $x+1$ (**survival probability**).
 
+**Survivorship curves**
 
-The term $b(x)$ represents the per-capita birth rate for females of age $x$. This is the number of offspring generated from one individual of age $x$.
-
+```{r}
+knitr::include_graphics("figs/survivorship.jpg")
+```
 
 This gives us a good idea of how age or life stage can influence reproductive output and survival. 
 
+$l(x)$ and $b(x)$ are the basis of all our life-table calculations. If we know $l(x)$ and $b(x)$, we can calculate the intrinsic growth rate $r$. To do that, we need to calculate two more number first: the net reproductive rate $R_0$ and the generation time $G$.
 
-$R_0$ is the net reproductive rate, which corresponds to the average number of offspring that would be born to each member of a population going from birth to death following to life table. 
+$R_0$ is the net reproductive rate, which corresponds to the average number of female offspring that would be born to each female member of a population going from birth to death following to life table. 
 
-$$ R_{0} = 0 + 0.4 + 0.3 + 0.2 + 0.2 = 1.1 $$
+$$R_0 = \sum^k_{x=0}l(x)b(x)$$
+
+$$ R_{0} = 0 + 1.6 + 1.2 + 0.1 + 0 = 2.9 $$
+
+$R_0 > 1$?
+
+$R_0 = 1$? 
+
+$R_0 < 1$? 
+
+$R_0$ is very _similar_ to $\lambda$ in terms of description. But, $r \neq ln(R_0)$ because $R_0$ measures increase of population as a function of _generation time_.
 
 $G$ is the generation time, which is quantified as the average age of parents of all offspring produced in a single cohort. It can be calculated as 
 
 
 $$ G = \frac{\Sigma_{x=0}^{k} l(x)b(x)x}{\Sigma_{x=0}^{k} l(x)b(x)} $$
 
-$$ G = (0.4+0.6+0.6+0.8) / (0.4+0.3+0.2+0.2)  =  2.182 $$
+$ G = ? $ in Table \@ref(tab:lifeTable).
 
 From $R_0$ and $G$, we can compute $r$ and $\lambda$
 
 
-$$ r = \frac{ln(R_0)}{G} = \frac{ln(1.1)}{2.182} = 0.0437 $$
+$$ r \approx \frac{ln(R_0)}{G} $$
 
-$$ \lambda = e^{r} = e^{0.0.0437} = 1.045 $$
+Calculate $r$ for the example in Table \@ref(tab:lifeTable). What is the unit of $r$ here?
 
-What is the relationship between $R_{0}$ and $\lambda$?
+```{r, eval=FALSE, echo=FALSE}
+log(sum(lt$`l(x)b(x)`))/(sum(lt$`l(x)b(x)x`)/sum(lt$`l(x)b(x)`))
+```
+
+$$ \lambda = e^{r} $$
+
+
 
 \clearpage
 
@@ -250,7 +269,7 @@ $$ A_{t+1} = \lambda_{A} * A_t $$
 
 Then, $$ N_{t} = J_{t} + T_{t} + A_{t} $$
 
-We can account for population flow explictly by having some survival term which tracks the transition of juveniles to teenagers, and teenagers to adults, but what else does this fail to account for? The contribution of different stage classes is not to it's own class, but to the first stage class, right? How do we incorporate this? We could set up a system of equations, or we could use *matrix modeling*, which essentially sets up a system of equations, but in a nice way.
+We can account for population flow explictly by having some survival term which tracks the transition of juveniles to teenagers, and teenagers to adults, but what else does this fail to account for? The contribution of different stage classes is not to it's own class, but to the next stage class, right? How do we incorporate this? We could set up a system of equations, or we could use *matrix modeling*, which essentially sets up a system of equations, but in a nice way.
 
 \clearpage
 

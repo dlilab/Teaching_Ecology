@@ -333,8 +333,6 @@ plot(1:stps,
 
 ## Matrix model
 
-((give this as an example problem to let the students work through it))
-
 First, build a simple projection matrix
 
 
@@ -349,43 +347,24 @@ projMatrix <- matrix(
   ,nrow=3,ncol=3,byrow=T
 )
 
-
 abund0 <- matrix(c(20,20,20), ncol=1)
-
 ```
-
-
-
-
 
 Simulate one generation into the future.
 
 ```{r}
-
 abund1 <- projMatrix  %*% abund0 
-
-
 ```
-
-
 
 Simulate one more generation 
 
 ```{r}
-
 projMatrix %*% abund1
-
-
 ```
-
-
-
-
 
 Simulate many generations to examine dynamics 
 
 ```{r}
-
 getStageDynamics <- function(projMatrix, abund, steps=100){
   ret <- matrix(0, ncol=3, nrow=steps+1)
   ret[1,] <- abund
@@ -394,46 +373,20 @@ getStageDynamics <- function(projMatrix, abund, steps=100){
   }
   return(ret)
 }
-
 ```
 
 
 
 
 ```{r}
-
 stageDynamics <- getStageDynamics(projMatrix, abund0, steps=50)
 
-
 plot(stageDynamics[,1], type='l', lwd=2,
-  col=colz[1],
+  col="red",
   ylab='Abundance', xlab='Time')
-lines(stageDynamics[,2], lwd=2, col=colz[2])
-lines(stageDynamics[,3], lwd=2, col=colz[3])
-legend('topright', pch=16, col=colz[1:3],
+lines(stageDynamics[,2], lwd=2, col="blue")
+lines(stageDynamics[,3], lwd=2, col="orange")
+legend('topright', pch=16, col=c("red", "blue", "orange"),
   c('Young', 'Middle', 'Old'), bty='n')
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-Explore some of the dynamics with the projection matrix and equilibrium points. 
-
-
-```{r}
-
-
-
-
-
-```
-
