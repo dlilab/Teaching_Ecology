@@ -37,7 +37,7 @@ td, th {
 |      | Jan. 20 | What is Ecology                        |  ☝️   |   ☝️  |    ☝️   |
 |  2   | Jan. 25 | Life and the Environment               | <a href="../lectures/02_lifeEnviron/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>  |   -    |    -    |
 |      | Jan. 27 | Population dynamics (1)                |   <a href="../lectures/03_popDynamics/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>     |  <a href="../lectures/03_popDynamics/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/03_popDynamics/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a> <a href="../lectures/03_popDynamics/Rcode.html" target="_blank">R</a>     |  <a href="../lectures/03_popDynamics/gotelliPopDynamics.pdf" target="_blank" title="Population Dynamics Chapter 1-2"><i class="fas fa-book-reader"></i></a>   |
-|  3   | Feb. 01 | Population dynamics (2)                |        |       |   ☝️    |
+|  3   | Feb. 01 | Population dynamics (2)                |        |       |   <a href="../lectures/03_popDynamics/Gotelli_2008_chapter_3.pdf" target="_blank" title="Population Dynamics Chapter 1-2"><i class="fas fa-book-reader"></i></a>     |
 |      | Feb. 03 | Stochasticity & dispersal (1)          |        |       |         |
 |  4   | Feb. 08 | Stochasticity & dispersal (2)          |        |       |         |
 |      | Feb. 10 | __Exam 1__                             |        |       |         |
