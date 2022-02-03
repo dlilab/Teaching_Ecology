@@ -5,17 +5,17 @@ includes:
   in_header:
     - \usepackage{lmodern}
 output:
-  pdf_document:
-    fig_caption: yes
-    fig_height: 6
-    fig_width: 6
-    toc: yes
   html_document:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
     highlight: tango
     theme: journal
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
 ---
 
 ```{r}
@@ -34,14 +34,14 @@ expoDynamics <- function(n, lambda, steps = 100){
   ret[1] <- n
   for(i in 1:steps){
     ret[i+1] <- ret[i] * lambda[i]
-  
+  }
   return(ret)
 }
 
 ```
 
 ```{r}
-stps = 30
+stps = 60
 plot(
   x = 1:stps,
   y = expoDynamics(n = 20, lambda = rep(1.3, stps+1), steps = stps-1),
@@ -51,7 +51,7 @@ plot(
   ylab = 'Population size',
   col = "red"
 )
-replicate(20, lines(x = 1:stps,
+x = replicate(200, lines(x = 1:stps,
   y = expoDynamics(n = 20, lambda = rnorm(n = stps, mean = 1.3, sd = 0.5), steps = stps-1),
   col = "blue"))
 ```

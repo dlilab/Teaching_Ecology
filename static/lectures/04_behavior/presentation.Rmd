@@ -1,6 +1,6 @@
 ---
-title: "Week 3: individual behavior"
-author: "Tad Dallas"
+title: "Stochasticity and Dispersal"
+author: "Daijiang Li"
 institute: "LSU"
 date: ""
 output:
@@ -22,7 +22,6 @@ options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
 
 ```
-
 
 
 class: left, center, inverse
