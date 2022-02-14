@@ -1,7 +1,8 @@
 ALL: 01_whatIsEcology/notes.pdf 01_whatIsEcology/notes.html 01_whatIsEcology/presentation.html \
 		 01_whatIsEcology/Rcode.pdf 01_whatIsEcology/Rcode.html 02_lifeEnviron/presentation.html \
 		 03_popDynamics/notes.pdf 03_popDynamics/notes.html 03_popDynamics/Rcode.html 03_popDynamics/presentation.html \
-		 04_behavior/notes.pdf 04_behavior/notes.html 04_behavior/Rcode.html 04_behavior/presentation.html
+		 04_behavior/notes.pdf 04_behavior/notes.html 04_behavior/Rcode.html 04_behavior/presentation.html \
+		 05_metapopulation/notes.pdf 05_metapopulation/notes.html 05_metapopulation/presentation.html
 
 OStype := $(shell uname -s)
 

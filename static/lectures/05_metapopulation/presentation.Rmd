@@ -1,0 +1,145 @@
+---
+title: "Metapopulation"
+author: "Daijiang Li"
+institute: "LSU"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+class: left, middle
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+```
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
+
+## Exam 1
+
+
+---
+
+# Population dynamics so far
+
+.font200[
+- Exponential growth with unlimited resource
+- Logistic growth (Carry Capacity _K_)
+- Age structures
+- Closed population and dispersal
+]
+
+
+---
+
+# Metapopulation
+
+### The movement of individuals among sites can be potentially important to the persistence and survival of populations.
+
+### *Metapopulation*: population of populations (Levins 1970); a group of several local populations linked by immigration and emigration
+
+---
+
+# Scaling populations to landscapes
+
+.font200[
+1. No longer focus on number of individuals (i.e. population size); instead we focus on the population's .red[_persistence_] (i.e., local extinction or local persistence)
+
+2. Shift to focus on regional and landscape level with many connected sites; we no longer focus on the persistence of any particular population; instead we try to understand the .blue[_fraction of all population sites that are occupied_]
+]
+
+???
+
+parking lot; does not care about a specific lot, but the proportion of opening/filled lots
+
+---
+
+# Local vs regional extinction risk
+
+.font200[
+.red[_local extinction_]: a single population extinct
+
+.red[_regional extinct_]: all populations in a system extinct (metapopulation die out)
+
+]
+
+.pull-left[
+
+#### One population
+
+$p_e$: probability of local extinction, e.g. $p_e = 0.7$
+
+probability of persistence = $1 - p_e$, e.g., 0.3
+]
+
+--
+
+.pull-right[
+
+#### Multiple (e.g., $n = 5$) population
+
+probability of regional extinction = $p_e^{n}$ = $0.7^5$ = `r 0.7^5`
+
+probability of regional persistence = $1 - p_e^{n}$ = $1 - 0.7^5$ = `r 1-0.7^5`
+]
+
+--
+
+.font150[**Spread of the risk**: a set of populations can persist for a surprisingly long time]
+
+---
+
+# Metapopulation models
+
+## Assumptions
+
+.font150[
+- a set of *homogenous* pathes
+
+- no spatial structure
+
+- no time lags: instantaneous response
+
+- constant colonization/immigration and extinction rates
+
+- regional occurrence affects local colonization and extinction rates
+
+- large number of patches
+]
+
+---
+class: center, middle
+
+# Parameter symbols in notes vs book
+
+
+.font200[
+
+|                            | Notes | Book |
+|----------------------------|-------|------|
+| Fraction of sites occupied | $N$     | $f$    |
+| Colonization rate          | $c$     | $p_i$  |
+| Extinction rate            | $e$    | $p_e$  |
+]
+
+---
+
+
+# Metapopulation models
+
+$$\frac{df}{dt}= p_i(1-f)-p_ef$$
+
+
+
+

@@ -1,0 +1,150 @@
+---
+title: "Metapopulation"
+author: "Daijiang Li"
+date: ""
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: no
+    toc: no
+  tufte::tufte_html: 
+    toc: yes
+    highlight: kate
+fontsize: 12pt
+linestretch: 1.5
+mainfont: Arial
+urlcolor: blue
+linkcolor: orange
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \rhead{Biol 4253}
+  - \lhead{Individual behavior}
+  - \setlength{\headheight}{14.5pt}
+---
+
+```{r knitr_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align='center', cache = FALSE, warning = FALSE,
+        message = FALSE, echo = FALSE, out.width = '95%')
+options(digits = 3, width = 88)
+if(!require(bookdown)) install.packages("bookdown", repo="http://cran.us.r-project.org")
+```
+
+
+# Reading:
+
+Gotelli, Nicholas J. A primer of ecology. Sunderland, MA: Sinauer Associates, 2001. Chapter 4. 
+
+
+
+## Scaling populations to landscapes
+
+Populations of a single species may be distributed across a landscape of suitable habitat patches within a larger landscape of unsuitable landscape. Consider an aquatic plant species across a mostly terrestrial landscape dotted with lakes. The species can only exist in the lake habitats, but these lakes can be connected through dispersal processes. This set of lake habitats connected by dispersal comprises a _metapopulation_. 
+
+Metapopulations are considered to be in a relatively constant state of flux, as _local extinctions_ -- single populations that go to extinction -- of species in habitat patches are buffered by re-colonization by dispersal from neighboring patches. In this way, dispersal can be beneficial or detrimental to metapopulation persistence. 
+
+Under high dispersal, patches become homogeneous and population dynamics tend to become synchronous. This _synchrony_ is destabilizing, in that periods of low population sizes will be experienced by all patches, increasing the likelihood of stochastic extinction of the entire metapopulation. On the other hand, too little dispersal will result in spatial clustering of a species, as the species will be confined to the set of patches that can be successfully reached and colonized and similarly potentially increasing extinction risk.
+
+
+### The benefits of a metapopulation
+
+Consider a population existing on a single patch with some probability of extinction ($P_e$) of 0.2. Extinction risk at any timepoint is independent of the previous timepoint (a big assumption, but bear with me). The probability of population persistence for a 5 year period is then (1- $P_e$)$^{5}$ or 0.328, which corresponds to a probability of extinction of 0.672. If we were to divide this single patch into two patches, and make the assumption that extinction risk is the same (not a terribly big assumption, but we'll address this later). Regional extinction (both patches going extinct) would be equal to $P_{e}^{2}$, so the probability of regional extinction sometime within a period of 5 years would be  1 - probability of persistence = 1 - $\left((1 - P_e^{2})^{5}\right)$. This would suggest that the persistence probability now is 0.815, and the risk of extinction has therefore dropped to 0.185. 
+
+### How do metapopulations work?
+
+To understand metapopulations, we'll start with a foundational metapopulation model; the Levins' model (1969). Richard Levins created a simple model focused solely on patch occupancy (i.e., is the species present or absent) as a way to mathematically assess the proportion of occupied patches by a species given minimal demographic information. In this case, local habitat patches are either occupied or unoccupied, and both patch number and the spatial orientation of patches are undescribed. Dispersal among habitat patches can rescue patches from extinction, or allow for the recolonization of extinct patches. All patches are treated as equal, so that any patch is suitable for a species, and (as a simplifying assumption) all habitat patches can be reached from all other patches. This simplified representation treats space as implicit, and patch quality and size as constant; rather than an explicit population size, patch occupancy is just a 0 or 1 state.
+
+$$ \frac{dN}{dt} = cN(1-N) - eN $$
+
+where the change in the number of occupied sites ($N$) by a species is a function of colonization rate $c$ and extinction rate $e$. 
+
+
+This should look somewhat familiar, but if it doesn't, no worries. It can be expressed using similar things from the logistic model, which we went over when discussing population dynamics and Lotka-Volterra competition. But here, the carrying capacity (which was the number of individuals a site could support in the population dynamics lecture) is now the fraction of patches that will be occupied by a species at equilibrium. 
+
+The equilibrium fraction of patches that should be occupied via colonization and extinction rates is 
+
+$$ K = 1 - \frac{e}{c} $$
+
+Further, this model can be used to generate a threshold condition for metapopulation persistence, which relates to the balance between colonization and extinction rates, and is analagous to population growth rate in the logistic model. That is, a metapoulation will persist if 
+
+
+$$ \frac{e}{c} < 1 $$
+
+
+That is, when extinction rate becomes larger than colonization, the metapopulation will not persist. This shows that even a metapopulation in equilibrium is still in a constant state of patch-level flux. In real applications, this implies that just because a patch of habitat is empty, that may not imply it is uninhabitable; and similarly, just because a population goes extinct, it may not be indicative of broader declines or instability.
+
+This is admittedly a simple representation of a metapopulation, as it assumes that all habitat patches are equivalent (colonization and extinction rates are constant across patches), there is no spatially-explicit structure to the distribution of patches, and the only thing we track is occupancy (so population dynamics within a single patch are not considered). 
+
+Assumptions of the Levins model:
+
++ patches are all the same
++ no spatial structure 
++ constant $e$ and $c$, 
+
+However, despite this simplicity, the Levins model can yield important insights into spatial population dynamics. For instance, the mean time to extinction of any given population/patch is the inverse of the rate (i.e., $T_E = \frac{1}{e}$). The simplicity of the Levins model has resulted in a sizable body of literature surrounding and extending the model. For instance, in the original Levins' model all patches are equidistant from one another, identical in quality, and can only be in one of two potential states (occupied or unoccupied), but each of these conditions is frequently adjusted in derivative stochastic patch occupancy models (SPOMs). Researchers have shown that despite the simplicity, Levins-type dynamics can emerge from more complicated stochastic metapopulation models, and extensions of the Levins model continue to provide insight into the influence of habitat patch size and topography (i.e., spatial orientation of habitat patches) on metapopulation persistence.
+
+### Types of metapopulations
+
+Metapopulation "type" can be divided along two axes, which describe the dispersal connections between habitat patches and the relative size of habitat patches. That is, we can imagine a 2-dimensional space, where one axis corresponds to connectivity (how well are patches connected by dispersal?) and the other axis corresponds to variance in patch size (what is the distribution of patch sizes in the metapopulation?) 
+
+```{r fig1, out.width = '100%', fig.caption="Taken from https://naes.unr.edu/shoemaker/teaching/NRES-470/LECTURE13.html"}
+knitr::include_graphics("figs/MP1.jpg")
+```
+
+### Mainland-Island model
+
+Colonization comes from a single source, and isn't dependent on the fraction of occupied patches. This basically assumes the idea of "propagule rain", that a constant supply of immigrants are provided and patches become colonized from this mainland source.
+
+$$ \frac{dN}{dt} = c(1-N) - eN $$
+
+This changes our equilibrium fraction of occupied patches though. Making this assumption shifts the metapopulation $K$ to 
+
+$$ K = \frac{c}{c+e} $$
+
+Note here the effects of the propagule rain. Across a large range of extinction rates ($e$), $K$ still may be relative unaffected. That is, colonization processes become far more important here, as the fraction of occupied patches at equilibrium is now basically the fraction of colonization relative to extinction. This also brings up the existence of _sources_ and _sinks_. The mainland is assumed to be a _source_ here, defined as those patches with positive growth rates even in the presence of emigration (these patches are creating a bunch of individuals and then those individuals are dispersing). _Sink_ populations are those that persist, but have a negative population growth rate, such that they are only maintained via immigration of individuals from other patches. 
+
+### Patchy Population
+
+Local populations exist, but patches are so well-connected via dispersal that interbreeding is common and individuals may occupy any patch in the system. These systems tend to have high patch occupancy, and are _not_ considered metapopulations by most scientists. 
+
+### Non-equilibrium Populations
+
+Local populations exist, but patches that go extinct are rarely re-colonized (as a function of low dispersal). Each population is pretty independent, and their demographics are not linked (via immigration/emigration). These systems are pretty much destined for extinction (as extinction rates often exceed colonization rates), and are _not_ considered metapopulations by many scientists. 
+
+## The rescue effect
+
+Above, we treated the probability of extinction as independent from the fraction of occupied patches. However, what if local patch-level extinction probability ($e$) was a function of the fraction of occupied patches($N$)? Dispersal individuals from occupied sites serve not only to (re)colonize habitat patches, but also to provide individuals to other already established populations. Thus, a population that may have gone extinct due to small population sizes or demographic/environmental stochasticity now will not go extinct due to this extra boost from nearby populations. This boost is the _rescue effect_, and was incorporated into the Levins model by Hanski in 1982. 
+
+Let's consider the probability of extinction to depend inversely on the fraction of occupied patches (i.e., more patches occupied means fewer extinctions are going to occur). We now consider $e$ to be similar to the colonization rate, which depends on the fraction of occupied patches and the availability of unoccupied patches. 
+
+This changes the classic Levins model
+
+$$ \frac{dN}{dt} = cN(1-N) - eN $$
+
+by making $e$ a function of $N$, and results in the following
+
+$$ \frac{dN}{dt} = cN(1-N) - eN(1-N) $$
+
+which doesn't change the persistence conditions for the metapopulation as described above.
+
+### Removal of patches
+
+One interesting thing about metapopulations is that empty patches serve a role in metapopulation persistence. This has clear implications to conservation, as even the destruction of habitat where no organisms presently exist could affect the extinction probability of many species.
+
+$$ \frac{dN}{dt} = cN(1-N-D) - eN $$
+
+where $D$ is the proportion of patches removed from the system. This makes the equilibrium now
+
+$$ K = 1 - \frac{e}{c} - D $$
+
+<!-- ### Incorporating the influence of patch area and distance between patches -->
+
+<!-- An extension of the Levins model provides a bridge between metapopulations and island biogeography theory (which will discuss later). This simple extension considers a set of spatially explicit patches of variable size, where a distance matrix $D$ describes the distance between all patches in the metapopulation. The model borrows elements of MacArthur and Wilson's _Theory of Island Biogeography_, such that distance between patches ($D_{ij}$) and patch area ($A_{i}$) influence extinction and colonization processes, where the patch extinction rate scales with patch area ($e_{i} = e / A_{i}$), and colonization ($c_{i}$) becomes a property of distance ($D_{ij}$), patch area ($A_{i}$), and dispersal rate ($\alpha$) where   -->
+
+<!-- $$ c_{i} = \sum_{j \ne i}e^{-\alpha D_{ij}} A_{j}p_{j}(t) $$ -->
+
+<!-- This suggests that the mean time to extinction of a habitat patch ($1 / e_{i}$) is determined by the area of the patch.  -->
+
+
