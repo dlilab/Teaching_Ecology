@@ -20,7 +20,7 @@ header-includes:
   - \pagestyle{fancy}
   - \fancyhf{}
   - \rhead{Biol 4253}
-  - \lhead{Individual behavior}
+  - \lhead{Niche}
   - \setlength{\headheight}{14.5pt}
 ---
 
@@ -75,7 +75,7 @@ Species with a larger set of abiotic tolerances should hypothetically have a lar
 The idea is that some range of environmental niche space is not being occupied, and therefore some species "should" be there to "fill" the vacant niche. This borrows a slightly different definition of the word _niche_, as the Hutchinsonian niche view would define the niche by the range of environments in which a species occurs, so it's a property of the species and not a property of the habitat. The idea of the vacant niche treats the niche as a property of the climatic space or of a particular ecosystem. An example of a vacant niche comes from Lawton and colleagues, who studied a fern species and the associated insect communities. They found a wide range of insect species on the fern plants, despite the plants being a relatively homogeneous environmental space. Thus, they argued that the plants with few species must have some vacant niches. That is, the plant contains some set of environmental space that is unoccupied by the set of species. Thus, the environmental niche space is a property of the fern, defined independently of the species niche limits. 
 
 
-**What is wrong with this idea?**: Apart from mis-defining the niche, this completely ignores the influence of dispersal limitation. Dispersal limitation occurs when a species is able to successfully disperse to a given habitat (e.g., low species richness on a fern which is a bit far away and therefore tough to disperse to). The other two things that are largely ignored in this view of vacant niches is the influence of _competitive exclusion_ and _historical contingency_. 
+**What is wrong with this idea?**: Apart from mis-defining the niche, this completely ignores the influence of _dispersal limitation_. Dispersal limitation occurs when a species is able to successfully disperse to a given habitat (e.g., low species richness on a fern which is a bit far away and therefore tough to disperse to). The other two things that are largely ignored in this view of vacant niches is the influence of _competitive exclusion_ and _historical contingency_. 
 
 ## Niche overlap and competitive exclusion
 
@@ -116,74 +116,49 @@ Apart from this distinction between inter and intra -specific competition, there
 + interference
 + apparent
 
-
 _exploitative competition_: A competitive interaction where individuals consume a common limiting resource. e.g., bird species which occupy tree holes may compete for nesting sites, as there are only so many tree holes to nest in. Another, more classic example, would be competition for a prey resource e.g., two small mammal species may compete for seed resources. 
-
 
 _interference competition_: A competitive interaction where individuals interact directly. e.g., territorial species defending their territory from establishment of another species, aggression between individuals of different species that affects the survival or reproduction of one or both individuals. 
 
-
 _apparent competition_: A competitive interaction where one species indirectly influences the survival or reproduction of another species through indirect effects on a shared predator or parasite. e.g., a species which is able to tolerate infection by a shared parasite may increase the abundance of the parasite, which can have a proportionately stronger influence on a second competing species. This does not require the species to have a limiting resource (like classic exploitative competition) or to interact directly (like interference competition). 
-
-
-
 
 ### What makes a good competitor?
 
 The idea that competition can be a major force structuring communities shouldn't come as a surprise, as we discussed the idea of competitive exclusion previously, where species with a large degree of niche overlap cannot coexist indefinitely on a limiting resource. But now, these different forms of competition create new ways through which competition can act, potentially leading to exclusion of one species. For instance, in _interference_ competition, one predator species may scare another predator species off from it's normal prey resource, resulting in a shift in diet. This shift in diet could come at a demographic cost (e.g., lower population growth rates). 
-
-
-
 
 ### R star theory 
 
 So what makes a species a good competitor? This is a big question, and we won't go into too much detail here. One school of thought suggests that the winner of competition (and therefore the thing that makes for a good competitor) is the amount of resource necessary for the species to have a positive growth rate. This is often referred to as $R^{*}$ (R star), and can be used to explain the maintenance of species diversity in a community. The idea is that a species with a lower $R^{*}$ will outcompete a species with a higher $R^{*}$, especially as resources become limited. Let's look at this, starting with a set of coupled differential equations describing a set of $j$ species ($N_j$) eating a shared resource $R$. 
 
 
-\[\frac{dN}{dt} = N_{j}(a_{j}R - d) \]
+$$ \frac{dN}{dt} = N_{j}(a_{j}R - d) $$
 
-\[\frac{dR}{dt} = r - R\sum_{j} a_{j}N_{j} \]
+$$ \frac{dR}{dt} = r - R\sum_{j} a_{j}N_{j} $$
 
 where $N_{j}$ is the density of species $j$, $R$ is a common shared resource among all $j$ species that grows at some constant rate $r$, $a_{j}$ is the conversion efficiency (how well can species $j$ turn resource into babies?), $d$ is a death rate (can be species-specific; $d_{j}$). Then the equilibrium of each species $j$ can be estimated as a function of resource ($R$), describing the amount of resources needed hit 0 net population growth ($\frac{dN}{dt} = 0$). 
 
-\[ R^{*} = \frac{d}{a_{j}} \]
+$$ R^{*} = \frac{d}{a_{j}} $$
 
 In the two species case, this suggests that the species with the lowest $R^{*}$ value will eventually outcompete the other species. This is because the competitor can capitalize on the resource more efficiently, or at least needs less resource to maintain a positive growth rate. So when resources are depleted, the species with the lower $R^{*}$ has a competitive advantage, as it has a positive growth rate while other species may decline. 
 
-
-
 What form of competition is this modeling? Why might this limit the application to other systems?
-
-
-
-
-
-
-
-
-
-
 
 
 ### Competition without considering a limiting resource
 
 Recall the logistic model 
 
-\[ \frac{dN}{dt} = rN\left(1-\frac{N}{K} \right) \]
+$$ \frac{dN}{dt} = rN\left(1-\frac{N}{K} \right) $$
 
 Let's add competition to it through direct interactions and extend it to 2 species. This model is called the Lotka-Volterra model.
 
-\[ \frac{dN_{1}}{dt} = r_{1}N_{1}\left(1-\frac{N_{1} + \alpha_{12}N_{2}}{K_{1}} \right) \]
+$$ \frac{dN_{1}}{dt} = r_{1}N_{1}\left(1-\frac{N_{1} + \alpha_{12}N_{2}}{K_{1}} \right) $$
 
-\[ \frac{dN_{2}}{dt} = r_{2}N_{2}\left(1-\frac{N_{2} + \alpha_{21}N_{1}}{K_{2}} \right) \]
-
+$$ \frac{dN_{2}}{dt} = r_{2}N_{2}\left(1-\frac{N_{2} + \alpha_{21}N_{1}}{K_{2}} \right) $$
 
 where we have populations of two species ($N_{1}$ and $N_{2}$), which grow at rates $r_{i}$ and compete through interspecific effects on the other species through $\alpha$ terms. 
 
-
-Let's look at the long-run outcomes of Lotka-Volterra competition, of which there are only 4. We'll do this by generating what is referred to as a "state-space", in which the abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis. Each point within the state-space represents a combination of abundances of the two species. For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). Each species has a line, and these lines are called \textit{zero net growth isoclines}. 
-
-
+Let's look at the long-run outcomes of Lotka-Volterra competition, of which there are only 4. We'll do this by generating what is referred to as a "state-space", in which the abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis. Each point within the state-space represents a combination of abundances of the two species. For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). Each species has a line, and these lines are called _zero net growth isoclines_. 
 
 
 ### Orienting yourself to the state space
@@ -193,15 +168,11 @@ knitr::include_graphics("figs/lv1.png")
 ```
 
 
-
 ### Exclusion of species 2
 
 ```{r fig3, out.width = '75%'}
 knitr::include_graphics("figs/lv2.png")
 ```
-
-
-
 
 ### Exclusion of species 1
 
@@ -210,14 +181,11 @@ knitr::include_graphics("figs/lv3.png")
 ```
 
 
-
 ### Unstable equilibrium
 
 ```{r fig5, out.width = '75%'}
 knitr::include_graphics("figs/lv4.png")
 ```
-
-
 
 ### Stable equilibrium
 
@@ -225,12 +193,6 @@ knitr::include_graphics("figs/lv4.png")
 knitr::include_graphics("figs/lv5.png")
 ```
 
-
-
-
-
-So this is a form of competition that does not require a limiting resource, and identifies a fairly small region of state space and parameterization that leads to stable coexistence. So if coexistence is so tough, why do we see lots of species coexisting in nature? Even when there is a single limiting resource! This question has confused ecologists for a long while, since around the time when we started to try to operationalize the niche. In fact, Hutchinson (the same person who defined the niche in the arguably "best" way) described what is known as the \textit{paradox of the plankton}, where many many species of plankton coexist on an arguably limiting resource (e.g., nitrogen, silicate acid, etc.). This runs counter to what we would expect to see given our models, and what would be predicted by the competitive exclusion principle. So what causes species to coexist on limiting resource (we discussed this above a bit; spatial or temporal variation in environmental conditions or resources that cause differential favoritism of some species some of the time or in some of the places). But lots of other things as well. For example, vertical gradients of light or turbulence, differential predation, or constantly changing environmental conditions (both in terms of environmental stochasticity and environmental noise color, remember the difference?).
-
-
+So this is a form of competition that does not require a limiting resource, and identifies a fairly small region of state space and parameterization that leads to stable coexistence. So if coexistence is so tough, why do we see lots of species coexisting in nature? Even when there is a single limiting resource! This question has confused ecologists for a long while, since around the time when we started to try to operationalize the niche. In fact, Hutchinson (the same person who defined the niche in the arguably "best" way) described what is known as the _paradox of the plankton_, where many many species of plankton coexist on an arguably limiting resource (e.g., nitrogen, silicate acid, etc.). This runs counter to what we would expect to see given our models, and what would be predicted by the competitive exclusion principle. So what causes species to coexist on limiting resource (we discussed this above a bit; spatial or temporal variation in environmental conditions or resources that cause differential favoritism of some species some of the time or in some of the places). But lots of other things as well. For example, vertical gradients of light or turbulence, differential predation, or constantly changing environmental conditions (both in terms of environmental stochasticity and environmental noise color, remember the difference?).
 
 > The Lotka-Volterra model predicts that stable coexistence of two species is possible only when intraspecific competition has a greater effect than interspecific competition. Why would this be the case? 
