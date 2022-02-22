@@ -158,7 +158,7 @@ $$ \frac{dN_{2}}{dt} = r_{2}N_{2}\left(1-\frac{N_{2} + \alpha_{21}N_{1}}{K_{2}} 
 
 where we have populations of two species ($N_{1}$ and $N_{2}$), which grow at rates $r_{i}$ and compete through interspecific effects on the other species through $\alpha$ terms. 
 
-Let's look at the long-run outcomes of Lotka-Volterra competition, of which there are only 4. We'll do this by generating what is referred to as a "state-space", in which the abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis. Each point within the state-space represents a combination of abundances of the two species. For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). Each species has a line, and these lines are called _zero net growth isoclines_. 
+Let's look at the long-run outcomes of Lotka-Volterra competition, of which there are only 4. We'll do this by generating what is referred to as a "state-space", in which the abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis. Each point within the state-space represents a combination of abundances of the two species. For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). These lines are called _zero net growth isoclines_. 
 
 
 ### Orienting yourself to the state space

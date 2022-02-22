@@ -326,6 +326,9 @@ class: center, middle
 
 ![](figs/comp4.png)
 
+.font130[_P. aurelia_ & _P. caudatum_ ate mostly floating bacteria;   
+_P. bursaria_ ate mostly yeast cells on the bottoms of the tubes
+]
 ---
 
 # Interspecific competition results in:
@@ -367,3 +370,251 @@ class: center, middle
 
 .font150[ Diel activity patterns of co-occurring shark species. [Lear et al. 2021](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.0816)]]
 
+
+---
+class: center, middle, inverse
+
+# Competition
+
+.font200[
+- Ecology is the study of the relationships between organisms and their environment
+
+- Until now, we have explored many of the ways organisms affect and are affected by their environment
+
+  + Mostly population dynamics of a single species
+  
+- We now turn attention to the interaction between organisms, both within and between species
+]
+
+---
+
+# Competition
+
+.font200[
+- Negative for both parties (-/-)
+
+  + even the "winner" will have expended more energe to gain the resource that it would have if there was no competition
+  
+- **Competitive interactions** are those in which two species negatively influence each other's population growth rates and depress each other's population sizes
+]
+
+---
+
+# Competitive interactions are diverse
+
+.font150[
+- Intraspecific
+- Interspecific
+]
+
+--
+
+### By mechanisms
+
+.font150[
+- .red[Exploitation competition]: through use of a shared limited resource (e.g. food, nutrient)
+- .red[Interference competition]: direct interactions between individuals that reduces the exploitation efficiency of another individual or population (e.g., aggressive defense of territories, chemical toxins [_allelopathy_])
+- .red[Pre-emptive competition]: compete for space as a limiting resource (e.g., birds use tree holes)
+- .red[Apparent competition]: one species indirectly influences the survival or reproduction of another species through indirect effects on a shared predator or parasite
+]
+
+---
+
+# What makes a good competitor?
+
+### One idea is that the winner of competition is the amount of resource necessary for the species to have a positive growth rate. This is often referred to as $R^*$ .blue[(R star) from Tilman's resource-consumer model], and can be used to explain the maintenance of species diversity in a community. The idea is that a species with a lower $R^*$ will outcompete a species with a higher $R^*$, especially as resources become limited.
+
+.pull-left[
+$$\frac{dN}{dt} = N_{j}(a_{j}R - d)$$
+
+$$\frac{dR}{dt} = r - R\sum_{j} a_{j}N_{j}$$
+
+$$ Equilibrium: R^{*} = \frac{d}{a_{j}} $$
+]
+
+--
+
+.pull-right[
+.font150[What form of competition is this modeling? Why might this limit the application to other systems?]
+]
+
+---
+
+# Competition without considering a limiting resource
+
+.font130[Recall the .red[logistic model] (growth rate is 
+reduced by _intraspecific_ competition)] 
+
+$$ \frac{dN}{dt} = rN\left(1-\frac{N}{K} \right) $$
+
+Let's add competition to it through direct interactions and extend it to 2 species. This model is called .red[the Lotka-Volterra model]
+
+.center[![:scale 50%](figs/lv.jpeg)]
+
+---
+
+# The Lotka-Volterra model
+
+.font150[
+$$\frac{dN_{1}}{dt} = r_{1}N_{1}\left(1-\frac{N_{1} + \alpha_{12}N_{2}}{K_{1}} \right)$$
+]
+
+
+.font150[
+$$\frac{dN_{2}}{dt} = r_{2}N_{2}\left(1-\frac{N_{2} + \alpha_{21}N_{1}}{K_{2}} \right)$$
+]
+
+.font150[The competition coefficients (α<sub>12</sub> and α<sub>21</sub>) measure the _per capita_ effect of one species on the population growth of the other, measured relative to the effect of intraspecific competitio
+- If α = 1, then per capita intraspecific effects = interspecific effects
+- If α<sub>12</sub> < 1, then intraspecific effects are more deleterious to Species 1 than interspecific effects 
+- If α<sub>12</sub> > 1, then interspecific effects are more deleterious 
+]
+
+---
+
+# Equilibrium solutions
+
+### set $\frac{dN}{dt}=0$
+
+.font150[
+$$\hat{N_1} = K_1 - \alpha_{12}N_2$$
+]
+
+.font150[
+$$\hat{N_2} = K_2 - \alpha_{21}N_1$$
+]
+
+.font130[
+This makes intuitive sense: The equilibrium for $N_1$ is the carrying capacity for Species 1 ( $K_1$) reduced by some amount owing to the presence of Species 2 ( $α_{12}N_2$)
+
+the product $\alpha_{12}\times \alpha_{21}$ must be < 1 for $N$ to be > 0 for both species (a necessary condition for coexistence)
+]
+
+---
+background-image: url('figs/state-space.jpg')
+background-position: 0% 50%
+background-size: contain
+class: center, top
+
+.pull-right[
+# State-space graphs
+
+.font150[
+The abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis
+
+For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). These lines are called .red[zero net growth isoclines].
+]
+]
+
+---
+background-image: url('figs/lv_1.png')
+background-position: 0% 50%
+background-size: contain
+class: right, top
+
+.pull-right[.font150[
+$$\hat{N_1} = K_1 - \alpha_{12}N_2$$
+]]
+
+---
+background-image: url('figs/lv_2.png')
+background-position: 0% 50%
+background-size: contain
+class: top, right
+
+.pull-right[.font150[
+$$\hat{N_2} = K_2 - \alpha_{21}N_1$$
+]
+]
+
+---
+background-image: url('figs/lv_3.png')
+background-position: 0% 50%
+background-size: contain
+class: top, right
+
+.pull-right[.font150[
+Competitive exclusion of  
+Species 2 by Species 1
+
+For species 1: $K_1>K_2\alpha_{12}$ (intra > inter)
+
+For species 2: $K_1\alpha_{21}>K_2$ (inter > intra)
+]
+]
+
+---
+background-image: url('figs/lv_4.png')
+background-position: 0% 50%
+background-size: contain
+class: top, right
+
+.pull-right[.font150[
+Competitive exclusion of  
+Species 1 by Species 2
+
+For species 1: $K_1<K_2\alpha_{12}$ (intra < inter)
+
+For species 2: $K_1\alpha_{21}<K_2$ (inter < intra)
+]
+]
+
+---
+background-image: url('figs/lv_5.png')
+background-position: 0% 50%
+background-size: contain
+class: top, right
+
+.pull-right[.font150[
+Competitive exclusion with an  
+.red[unstable equilibrium]
+
+For species 1: $K_1<K_2\alpha_{12}$ (intra < inter)
+
+For species 2: $K_1\alpha_{21}>K_2$ (inter > intra)
+]
+]
+
+---
+background-image: url('figs/lv_6.png')
+background-position: 0% 50%
+background-size: contain
+class: top, right
+
+.pull-right[.font150[
+Competitive exclusion with an  
+.blue[stable equilibrium]
+
+For species 1: $K_1>K_2\alpha_{12}$ (intra > inter)
+
+For species 2: $K_1\alpha_{21}<K_2$ (inter < intra)
+]
+]
+
+---
+
+.font150[
+
+The carrying capacity of Paddlefish is 100 per 1km2 and the carrying capacity of Gizzard Shad is 200 per 1km2. The effect on PDFH of GZSD is 0.4, and the effect on GZSD of PDFH is 0.6. What is the expected outcome of competition, starting with 20 individuals of each species?
+
+A. PDFH wins!	 
+B. GZSD wins!	 	
+C. Both go extinct 		
+D. Coexistence
+]
+
+
+---
+class: middle, center, inverse
+
+# https://djli.shinyapps.io/lotka-volterra-competition/
+
+
+---
+class: middle
+
+.font150[
+
+>In this lake, where competitions are fierce and continuous beyond any parallel in the worst periods of human history; where they take hold, not on goods of life merely, but always upon life itself; where mercy and charity and sympathy and magnanimity and all the virtues are utterly unknown; where robbery and murder and the deadly tyranny of strength over weakness are the unvarying rule; where what we call wrong-doing is always triumphant, and what we call goodness would be immediately fatal to its possessor – even here, out of these hard conditions, … an equilibrium has been reached and is steadily maintained that actually accomplishes for all the parties involved the greatest good which the circumstances will at all permit.
+>        	.right[–Stephen A. Forbes (1887)]
+]
