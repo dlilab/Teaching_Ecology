@@ -595,7 +595,7 @@ For species 2: $K_1\alpha_{21}<K_2$ (inter < intra)
 
 .font150[
 
-The carrying capacity of Paddlefish is 100 per 1km2 and the carrying capacity of Gizzard Shad is 200 per 1km2. The effect on PDFH of GZSD is 0.4, and the effect on GZSD of PDFH is 0.6. What is the expected outcome of competition, starting with 20 individuals of each species?
+The carrying capacity of Paddlefish (PDFH, species 1) is 100 per 1km2 and the carrying capacity of Gizzard Shad (GZSD, species 2) is 200 per 1km2. The effect of GZSD on PDFH ( $\alpha_{12}$) is 0.6, and the effect of PDFH on GZSD ( $\alpha_{21}$) is 0.4. What is the expected outcome of competition, starting with 20 individuals of each species?
 
 A. PDFH wins!	 
 B. GZSD wins!	 	
@@ -603,11 +603,15 @@ C. Both go extinct
 D. Coexistence
 ]
 
+--
+
+.font150[What if K1 = 130?]
+
 
 ---
 class: middle, center, inverse
 
-# https://djli.shinyapps.io/lotka-volterra-competition/
+## https://djli.shinyapps.io/lotka-volterra-competition/
 
 
 ---
