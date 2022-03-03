@@ -46,7 +46,7 @@ td, th {
 |  6   | Feb. 22 | Niche and competition (2)              |    ☝️    |  ☝️<a href="https://djli.shinyapps.io/lotka-volterra-competition/" target="_blank">R</a>     |   -    |
 |      | Feb. 24 | Predator-prey (1)                      |   <a href="../lectures/07_trophicInteractions/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>   |   <a href="../lectures/07_trophicInteractions/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/07_trophicInteractions/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a> <a href="https://djli.shinyapps.io/lotka-volterra_predation/" target="_blank">R</a>    |   <a href="../lectures/07_trophicInteractions/readings/gotelliPredation.pdf" target="_blank" title="Gotelli Chapter 6"><i class="fas fa-book-reader"></i></a>   |
 |  7   | Mar. 01 | Mardi Gras, __no class__               |        |       |         |
-|      | Mar. 03 | Predator-prey (2)                      |        |       |         |
+|      | Mar. 03 | Predator-prey (2)                      |    ☝️   |   ☝️   |   ☝️     |
 |  8   | Mar. 08 | __Exam 2__                             |        |       |         |
 |      | Mar. 10 | Disease ecology (1)                    |        |       |         |
 |  9   | Mar. 15 | Spring break, __no class__             |        |       |         |
