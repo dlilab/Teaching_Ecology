@@ -512,30 +512,49 @@ knitr::include_graphics("figs/foodweb.png")
 # Types of food webs
 
 .font200[
-- Connectedness food web
+- .blue[Connectedness food web]: feeding relationships, as described above. This is the most common type of food web
 
-- Energy flow food web
+- .blue[Energy flow food web]: defines connections as dominant sources of energy transfer. So this removes some feeding links which don't contribute strongly to the conversion of biomass up trophic levels
 
-- Functional food web
+- .blue[Functional food web]: tracks influence of populations on growth rates
 ]
+
+
+---
+
+![](figs/consuming.jpg)
+
+### All organisms are either consumed or enter the detritus pool (the ultimate fate of all)
+
+.font150[In most ecosystems, most NPP becomes detritus without passing through a heterotroph]
+
 
 ---
 
 # What controls food webs?
 
-```{r figenergyweb}
-knitr::include_graphics("figs/energeyflow.png")
-```
+![](figs/energeyflow.png)
 
-.font150[Energy; disturbance; ecosystem size; etc.]
+.font120[Energy; disturbance; ecosystem size; etc. Consequently, food chains tend to have < 5 trophic levels]
 
 ---
 
 # Pyramid structure
 
-```{r fig3, out.width = '90%'}
-knitr::include_graphics("figs/foodweb.png")
-```
+.center[![:scale 75%](figs/foodwebz.png)]
+
+.font150[This occurs when the demographic turn-over rates
+are especially high in the producer tier of the food web; 
+standing crop biomass is relatively low, but productivity is very high
+]
+
+---
+
+# Pyramid structure
+
+.center[![:scale 75%](figs/foodwebz.png)]
+
+.font200[.red[Could an energy pyramid ever be inverted?]]
 
 ---
 
