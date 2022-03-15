@@ -1,0 +1,113 @@
+---
+title: "Week 9"
+author: "Daijiang Li"
+includes:
+  in_header:
+    - \usepackage{lmodern}
+output:
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    highlight: tango
+    theme: journal
+---
+
+
+
+ 
+
+
+
+
+## Ecological networks
+
+
+Unipartite
+
+```{r}
+
+
+
+
+```
+
+
+Bipartite
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+## Network characteristics
+
+degree, connectance, etc.
+
+Root these to disease spread or something like that:
+
+unipartite (remove nodes with high degree, examine how a pathogen spreads in a modular versus nested network)
+
+bipartite (show distribution of degree for host-parasite or plant-pollinatr networks, show common nestedness or modularity values for bipartite networks)
+
+
+```{r}
+
+
+
+
+```
+
+
+
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+## Network structure
+
+modularity, nestedness, etc.
+
+```{r}
+
+
+
+
+```
+
+
+
+
+```{r}
+
+
+
+
+```
+
+

@@ -50,7 +50,7 @@ td, th {
 |  8   | Mar. 08 | __Exam 2__                             |        |       |         |
 |      | Mar. 10 | Disease ecology (1)                    |  <a href="../lectures/08_diseaseEcology/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>   |  <a href="../lectures/08_diseaseEcology/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/08_diseaseEcology/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a> <a href="../lectures/08_diseaseEcology/Rcode.Rmd" target="_blank">R</a>  |   <a href="https://www.nature.com/scitable/knowledge/library/disease-ecology-15947677/" target="_blank" title="Disease Ecology"><i class="fas fa-book-reader"></i></a>     |
 |  9   | Mar. 15 | Spring break, __no class__             |        |       |         |
-|  10  | Mar. 22 | Disease ecology (2)                    |        |       |         |
+|  10  | Mar. 22 | Disease ecology (2)                    |   ☝️    |   ☝️   |      ☝️  |
 |      | Mar. 24 | Community ecology (1)                  |        |       |         |
 |  11  | Mar. 29 | Community ecology (2)                  |        |       |         |
 |      | Mar. 31 | Ecological networks (1)                |        |       |         |

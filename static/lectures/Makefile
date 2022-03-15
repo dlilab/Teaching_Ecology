@@ -5,7 +5,12 @@ ALL: 01_whatIsEcology/notes.pdf 01_whatIsEcology/notes.html 01_whatIsEcology/pre
 		 05_metapopulation/notes.pdf 05_metapopulation/notes.html 05_metapopulation/presentation.html \
 		 06_niche/notes.pdf 06_niche/notes.html 06_niche/presentation.html \
 		 07_trophicInteractions/notes.pdf 07_trophicInteractions/notes.html 07_trophicInteractions/presentation.html \
-		 08_diseaseEcology/notes.pdf 08_diseaseEcology/notes.html 08_diseaseEcology/presentation.html 
+		 08_diseaseEcology/notes.pdf 08_diseaseEcology/notes.html 08_diseaseEcology/presentation.html \
+		 09_communityEcology/notes.pdf 09_communityEcology/notes.html 09_communityEcology/presentation.html \
+		 10_networks/notes.pdf 10_networks/notes.html 10_networks/presentation.html \
+		 11_landscapeEcology/notes.pdf 11_landscapeEcology/notes.html 11_landscapeEcology/presentation.html \
+		 12_envChange/notes.pdf 12_envChange/notes.html 12_envChange/presentation.html \
+		 13_macroecology/notes.pdf 13_macroecology/notes.html 13_macroecology/presentation.html
 
 OStype := $(shell uname -s)
 
