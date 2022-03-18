@@ -170,13 +170,210 @@ Use extrapolation to predict richness
 
 # Rarefaction
 
+.font200[Individual-based and sample-based  
+Procedures of individual-based rarefaction  
+Use rarefaction to compare diversity between two sites with different sampling effort
+]
+
+.center[![:scale 70%](figs/rarefaction.png)]
 
 
+---
+
+# Rarefaction Assumptions
+
+.font200[
++  underlying community is constant over time (no immigration or emigration of species)
+
++  well-mixed community (spatial distribution of each species is random)
+
++  individuals are sampled at random (brighter colored individuals aren't sampled more often than others)
+
++ sampling with identical methods (if used to compare two communities)
+]
 
 
+---
+
+# Approximation
+
+.font200[
+
+`$$E(S_{m}) \approx S - \sum_{i=1}^{S}(1-p_{i})^{m}$$`
+
+where `\(S\)` is the number of species, `\(m\)` is the total number of individuals in the sample, and `\(p_i\)` is the proportion of species `\(i\)` in the original sample. 
+]
+
+---
+
+# Species richness estimators for extrapolation
+
+## Chao1 index
+
+.font200[
+`$$S_{est} = S_{obs} + \left( \frac{(f_{1})^{2}}{2f_{2}}\right)$$`
+]
+
+---
+
+# Problem of Species Richness
+
+![](figs/comm_ab.png)
+
+.font200[.red[Which community is more diverse??]
+
+.blue[Richness is an uninformative descriptor: equal weight given to rare and abundant species]
+]
+
+---
+
+# Commonness vs. Rarity in communities  
+
+.font150[The typical pattern of abundances of different species of a single group in the same area:]
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-1-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 
+---
 
+# Species abundance 
+
+![:scale 80%](figs/moth_abund.png)
+
+.font150[
+- Moth data from England
+- x-axis on log2 scale; 
+- Partial bell-shaped curve -- log-normal distribution
+- .red[Very common pattern in nature]
+]
+
+---
+
+# Species Diversity
+
+![](figs/comm_ab.png)
+
+.font150[.red[Given the commonness of rarity, how to measure community diversity?]]
+
+.pull-left[
+.font150[
+Two different things going on:
+- Species Richness (number of species)
+- Species Abundance (relative evenness)
+]
+]
+
+.pull-right[
+.font150[
+Two potential solutions:
+- Shannon Index
+- Rank-abundance Curves
+]
+]
+
+---
+
+# Shannon Index
+
+.font200[
+Balancing Richness and Abundance/Evenness
+
+`$$H' = - \sum_{i=1}^{S}p_i\ln p_i$$`
+Where: `\(p_i\)` = proportion of the total sample	represented by species `\(i\)`, `\(\ln\)` = log base `\(e\)`, `\(S\)` = the number of species in the community 
+]
+
+---
+
+# Shannon Index 
+
+.font130[
+`\(H' = - \sum_{i=1}^{S}p_i\ln p_i\)`
+]
+
+![](figs/comm_ab.png)
+
+.pull-left[
+| Species | Abundance | Pi | ln(Pi) | Pi x ln(Pi) |
+|---------|-----------|----|--------|-------------|
+| Yellow  | 17        |    |        |             |
+| Orange  | 1         |    |        |             |
+| Purple  | 1         |    |        |             |
+| Brown   | 1         |    |        |             |
+| Total   | 20        | 1  |        |             |
+
+.font150[H' = ?]
+]
+
+.pull-right[
+| Species | Abundance | Pi | ln(Pi) | Pi x ln(Pi) |
+|---------|-----------|----|--------|-------------|
+| Yellow  | 5         |    |        |             |
+| Orange  | 5         |    |        |             |
+| Purple  | 5         |    |        |             |
+| Brown   | 5         |    |        |             |
+| Total   | 20        | 1  |        |             |
+
+.font150[H' = ?]
+]
+
+---
+background-image: url('figs/shannon.png')
+background-position: 50% 50%
+background-size: contain
+class: center, bottom
+
+.font200[Index Higher when species more evenly distributed]
+---
+
+![:scale 80%](figs/shannon2.png)
+.font150[
+
+What is the Shannon Index of Diversity for the following community?  
+A. 0  
+B. 1  
+C. 2.83  
+D. 17  
+]
+
+???
+
+Prop = 1, and ln1 = 0. Therefore, it’s 0.
+
+---
+
+# Shannon Index
+
+.font200[
+Weakness
+
+- Can’t tell if differences in measurements are due to richness or evenness (or can you?)
+
+- Difference between 0.58 &amp; 1.39. What does it mean?
+
+When all species are equally abundant: `\(H' = \ln (4) = 1.39\)`: Community B has max diversity
+
+Evenness E = H'/H'max
+]
+
+---
+
+# Rank-Abundance Curve
+
+&lt;img src="presentation_files/figure-html/unnamed-chunk-2-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.font150[Slope ≈ evenness; Length ≈ richness]
+
+---
+
+# Rank-Abundance Curve
+
+.font150[Slope ≈ evenness; Length ≈ richness]
+
+.center[![:scale 80%](figs/rank_abund.png)]
+
+---
+
+# Beta diversity
 
 
 

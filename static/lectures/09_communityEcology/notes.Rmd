@@ -115,6 +115,13 @@ One common estimator of species richness is called the Chao1 index, named after 
 
 
 $$ S_{est} = S_{obs} + \left( \frac{(f_{1})^{2}}{2f_{2}}\right) $$
+### Shannon Index
+
+Species Richness only counts the number of species and ignores species abundance. Shannon Index accounts for both the number of species and their abundances.
+
+$$H' = - \sum_{i=1}^{S}p_i\ln p_i$$
+
+Where: $p_i$ = proportion of the total sample	represented by species $i$, $\ln$ = log base $e$, $S$ = the number of species in the community.
 
 
 \clearpage
