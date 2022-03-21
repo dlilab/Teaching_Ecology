@@ -41,3 +41,7 @@ body { font-family: 'Yanone Kaffeesatz', 'Palatino Linotype', 'Droid Serif', 'Bo
 .blue { color: blue;}
 
 .green { color: green;}
+
+a {
+  text-decoration: underline;
+}
