@@ -121,7 +121,7 @@ If $d$ is big, the pathogen cannot invade. If $\beta$ is small, the pathogen can
 
 Loosely speaking, the outcome of an initial pathogen infection event in the SIR model can have 3 possible outcomes. First, the $R_0$ is below 1, and the infected individual moves to the recovered/removed class without causing any further infection. Second, the pathogen invades, infects a bunch of people, and then leaves the population (an epidemic pathogen). Third, the pathogen invades, and maintains sustained low levels of infection in the population (an endemic pathogen). 
 
-Another related quantity to $R_0$ is the _force of infection_, which is simply $\beta I$, which captures the transmission rate times the number of infected individuals (a measure which is proportional to transmission potential to the susceptible population $S$.
+Another related quantity to $R_0$ is the _force of infection_, which is simply $\beta I$, which captures the transmission rate times the number of infected individuals (a measure which is proportional to transmission potential to the susceptible population $S$).
 
 **How do we reduce $R_0$?** The model above is simple, in that it assumes direct transmission (infected individuals transmit pathogen as soon as they are infected at the same rate until they recover or die). What other things could influence $R_0$?
 
