@@ -23,8 +23,10 @@ SIR models
 ```{r fig.width='100%'}
 if(!require(shinySIR)) install.packages("shinySIR")
 shinySIR:::run_shiny(model = "SIR", 
-                     ics = c(S = 90, I = 10, R = 0), 
-                     tmax = 500, 
-                     showtable = TRUE)
+                     ics = c(S = 99, I = 1, R = 0), 
+                     tmax = 100, 
+                     showtable = FALSE)
 ```
+
+Find out $\beta$ and $d$.
 
