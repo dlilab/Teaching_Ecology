@@ -51,8 +51,8 @@ td, th {
 |      | Mar. 10 | Disease ecology (1)                    |  <a href="../lectures/08_diseaseEcology/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>   |  <a href="../lectures/08_diseaseEcology/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/08_diseaseEcology/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a> <a href="../lectures/08_diseaseEcology/Rcode.Rmd" target="_blank">R</a>  |   <a href="https://www.nature.com/scitable/knowledge/library/disease-ecology-15947677/" target="_blank" title="Disease Ecology"><i class="fas fa-book-reader"></i></a>     |
 |  9   | Mar. 15 | Spring break, __no class__             |        |       |         |
 |  10  | Mar. 22 | Disease ecology (2)                    |   ☝️    |   ☝️   |      ☝️  |
-|      | Mar. 24 | Community ecology (1)                  |        |       |         |
-|  11  | Mar. 29 | Community ecology (2)                  |        |       |         |
+|      | Mar. 24 | Community ecology (1)                  |  <a href="../lectures/09_communityEcology/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>    |  <a href="../lectures/09_communityEcology/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/09_communityEcology/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>   |   <a href="../lectures/09_communityEcology/readings/gotelliMeasuringDiversity.pdf" target="_blank" title="Gotelli Chapter 9"><i class="fas fa-book-reader"></i></a>    |
+|  11  | Mar. 29 | Community ecology (2)                  |    ☝️    |    ☝️   |   <a href="https://www.nature.com/scitable/knowledge/library/succession-a-closer-look-13256638" target="_blank" title="Succession: a closer look"><i class="fas fa-book-reader"></i></a>    |
 |      | Mar. 31 | Ecological networks (1)                |        |       |         |
 |  12  | Apr. 05 | Ecological networks (2)                |        |       |         |
 |      | Apr. 07 | __Exam 3__                             |        |       |         |
