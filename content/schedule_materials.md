@@ -53,8 +53,8 @@ td, th {
 |  10  | Mar. 22 | Disease ecology (2)                    |   ☝️    |   ☝️   |      ☝️  |
 |      | Mar. 24 | Community ecology (1)                  |  <a href="../lectures/09_communityEcology/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>    |  <a href="../lectures/09_communityEcology/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/09_communityEcology/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>   |   <a href="../lectures/09_communityEcology/readings/gotelliMeasuringDiversity.pdf" target="_blank" title="Gotelli Chapter 9"><i class="fas fa-book-reader"></i></a>    |
 |  11  | Mar. 29 | Community ecology (2)                  |    ☝️    |    ☝️   |   <a href="https://www.nature.com/scitable/knowledge/library/succession-a-closer-look-13256638" target="_blank" title="Succession: a closer look"><i class="fas fa-book-reader"></i></a>    |
-|      | Mar. 31 | Ecological networks (1)                |        |       |         |
-|  12  | Apr. 05 | Ecological networks (2)                |        |       |         |
+|      | Mar. 31 | Ecological networks (1)                |  <a href="../lectures/10_networks/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>     |    <a href="../lectures/10_networks/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/10_networks/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>    |   <a href="http://networksciencebook.com/chapter/1" target="_blank" title="Network Science, Chapter 1"><i class="fas fa-book-reader"></i></a>       |
+|  12  | Apr. 05 | Ecological networks (2)                |  ☝️    |     ☝️  |   <a href="../lectures/10_networks/readings/delmas2019.pdf" target="_blank" title="Delmas 2019"><i class="fas fa-book-reader"></i></a>    |
 |      | Apr. 07 | __Exam 3__                             |        |       |         |
 |  13  | Apr. 12 | Landscape ecology                      |        |       |         |
 |      | Apr. 14 | Global environmental change (1)        |        |       |         |

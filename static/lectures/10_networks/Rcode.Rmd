@@ -1,5 +1,5 @@
 ---
-title: "Week 9"
+title: "Ecological Networks"
 author: "Daijiang Li"
 includes:
   in_header:

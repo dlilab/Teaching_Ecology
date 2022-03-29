@@ -1,5 +1,5 @@
 ---
-title: "week 9: ecological networks"
+title: "Ecological networks"
 author: "Daijiang Li"
 date: ""
 output:
@@ -36,7 +36,15 @@ if(!require(bookdown)) install.packages("bookdown")
 
 # Reading:
 
-Pascual, Mercedes, Jennifer A. Dunne, and Jennifer A. Dunne, eds. Ecological networks: linking structure to dynamics in food webs. Oxford University Press, 2006. (pages 3-15; see `readings` folder)
+<!-- Pascual, Mercedes, Jennifer A. Dunne, and Jennifer A. Dunne, eds. Ecological networks: linking structure to dynamics in food webs. Oxford University Press, 2006. (pages 3-15; see `readings` folder) -->
+
+Delmas, Eva, et al. "Analysing ecological networks of species interactions." Biological Reviews 94.1 (2019): 16-36. 
+
+<https://onlinelibrary.wiley.com/doi/pdf/10.1111/brv.12433>
+
+_We will mainly focus on material from pages 1-13._
+
+Chapter 1 of Network Science by Albert-Lászió Barbási. <http://networksciencebook.com/chapter/1>
 
 
 

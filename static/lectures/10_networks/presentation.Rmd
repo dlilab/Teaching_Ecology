@@ -1,5 +1,5 @@
 ---
-title: "Week 8: ecological networks"
+title: "Ecological networks"
 author: "Daijiang Li"
 institute: "LSU"
 date: ""
