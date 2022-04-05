@@ -1,0 +1,42 @@
+---
+title: "Landscape Ecology"
+author: "Daijiang Li"
+institute: "LSU"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "../style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["https://platform.twitter.com/widgets.js", "../macro.js"]
+---
+class: left, middle
+
+
+```{r setup, include=FALSE}
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.align='center', echo = FALSE, out.width = '95%')
+
+```
+
+
+
+class: left, center, inverse
+
+.font300[Announcements]  
++ 
++ 
++ 
+
+
+---
+
+background-image: url('figs/network.jpg')
+background-position: 50% 50%
+background-size: contain
+class: center, top, inverse
+

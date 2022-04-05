@@ -300,6 +300,13 @@ $$C_{i}=\frac{P-\bar{P_{i}}}{\sigma_{\bar{P_{i}}}}$$
 ### Error tolerance and attack tolerance
 ![](figs/figure-1-1.jpg)
 
+???
+
+Error tolerance refers to the ability of a network to recover from the loss of a node
+
+attack tolerance: the robustness of a network to a targeted attack
+
+negative relationships between them
 
 ---
 
