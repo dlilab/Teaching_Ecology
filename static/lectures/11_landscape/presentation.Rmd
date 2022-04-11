@@ -94,6 +94,56 @@ background-size: contain
 
 ---
 
+# Importance of scale
+
+.font150[
+Landscape ecologists often grapple with issues associated with spatial scale
+
+Two important aspect of spatial scale: **grain** and **extent**
+
+Grain refers to the spatial resolution of a study or data set; e.g., are the data or samples obtained at a resolution of 1 m<sup>2</sup>, 100 m<sup>2</sup> or 1 km<sup>2</sup>?
+
+![](figs/scale.jpg)
+]
+
+
+---
+
+# Importance of scale
+
+.font150[
+Landscape ecologists often grapple with issues associated with spatial scale
+
+Two important aspect of spatial scale: **grain** and **extent**
+
+Grain refers to the spatial resolution of a study or data set; e.g., are the data or samples obtained at a resolution of 1 m<sup>2</sup>, 100 m<sup>2</sup> or 1 km<sup>2</sup>?
+
+Extent refers to the size of the study area being considered; e.g., is the landscape small or large?
+
+![:scale 78%](figs/extent.jpg)
+]
+
+
+---
+
+# Importance of scale
+
+.font150[
+Landscape ecologists often grapple with issues associated with spatial scale
+
+Two important aspect of spatial scale: **grain** and **extent**
+
+Grain refers to the spatial resolution of a study or data set; e.g., are the data or samples obtained at a resolution of 1 m<sup>2</sup>, 100 m<sup>2</sup> or 1 km<sup>2</sup>?
+
+Extent refers to the size of the study area being considered; e.g., is the landscape small or large?
+
+No fixed scale, either grain or extent, unambiguously identifies landscape ecology (a landscape ecological approach can also be applied to a very small area with fine resolution)
+]
+
+
+
+---
+
 # Landscape Structure
 
 ## **Landscape structure**: the physical configuration of landscape elements, e.g., patch size distributions, patch dispersion, patch shapes, patch connectivity / isolation, etc.
@@ -213,9 +263,9 @@ class: center, top
 # Habitat Loss & Fragmentation
 
 
-.center[![:scale 75%](figs/landscape_change.jpg)]
+.center[![:scale 73%](figs/landscape_change.jpg)]
 
-86% of habitat lost
+.font130[86% of habitat lost of heathland (in England)]
 
 ???
 
@@ -234,5 +284,78 @@ Fragmentation and isolation of heathland (in England) 40,000 ha to 6000 ha in 21
 
 .center[![:scale 75%](figs/fragmentation.jpg)]
 
-Loss & fragmentation of U. S. old-growth forests
+.font130[Loss & fragmentation of U. S. old-growth forests]
+
+---
+
+# Design Principles for Protected Areas
+
+![](figs/protect_design.jpg)
+
+---
+# The SLOSS Debate
+
+.font150[If only a limited amount of habitat can be protected in parks and reserves, which strategy is better:  a Single Large reserve Or Several Small reserves (SLOSS)?]
+
+![](figs/sloss.png)
+
+---
+
+# The SLOSS Debate
+
+.pull-left[
+## Several small is better
+
+### [Ecological Responses to Habitat Fragmentation Per Se](https://www.annualreviews.org/doi/abs/10.1146/annurev-ecolsys-110316-022612)
+### [Why do several small patches hold more species than few large patches?](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13059)
+]
+
+.pull-right[
+## Several small is not better
+
+### [Is habitat fragmentation good for biodiversity?](https://www.sciencedirect.com/science/article/pii/S0006320718305779)
+]
+
+
+---
+
+# Connectivity and Corridors
+
+.center[![](figs/corridors3.png)]
+
+---
+
+## The importance of corridors in fragmented landscapes
+
+.font150[
+Corridors Permit Movement: gene flow, reestablish species (rescue effect) etc.
+]
+
+.center[![](figs/corridors.jpg)]
+
+---
+
+## [Ongoing accumulation of plant diversity through habitat connectivity in an 18-year experiment](https://www.science.org/doi/full/10.1126/science.aax8992)
+
+![](figs/corridors2.png)
+
+---
+
+## Negative impacts of corridors
+
+.font150[
+- Scouting positions for predators
+
+- Disease spread
+
+- Pathway for the invasion of exotic species
+
+- If too narrow, can inhibit movement of social groups
+]
+
+![](figs/corridors4.png)
+
+---
+
+# Scaling populations to landscapes (metapopulation)
 
