@@ -56,7 +56,7 @@ td, th {
 |      | Mar. 31 | Ecological networks (1)                |  <a href="../lectures/10_networks/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>     |    <a href="../lectures/10_networks/notes.html" target="_blank"><i class="fas fa-file-alt"></i></a> <a href="../lectures/10_networks/notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>    |   <a href="http://networksciencebook.com/chapter/1" target="_blank" title="Network Science, Chapter 1"><i class="fas fa-book-reader"></i></a>       |
 |  12  | Apr. 05 | Ecological networks (2)                |  ☝️    |     ☝️  |   <a href="../lectures/10_networks/readings/delmas2019.pdf" target="_blank" title="Delmas 2019"><i class="fas fa-book-reader"></i></a>    |
 |      | Apr. 07 | __Exam 3__                             |        |       |         |
-|  13  | Apr. 12 | Landscape ecology                      |        |       |         |
+|  13  | Apr. 12 | Landscape ecology                      |  <a href="../lectures/11_landscape/presentation.html" target="_blank"><i class="fas fa-file-powerpoint"></i></a>    |  -    |   -    |
 |      | Apr. 14 | Global environmental change (1)        |        |       |         |
 |  14  | Apr. 19 | Global environmental change (2)        |        |       |         |
 |      | Apr. 21 | Macroecology (1)                       |        |       |         |
