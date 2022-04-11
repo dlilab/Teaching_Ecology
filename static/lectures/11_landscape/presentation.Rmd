@@ -46,12 +46,11 @@ background-position: 50% 50%
 background-size: contain
 class: center, top
 
-# Landscape
 
+## A **landscape** is a heterogeneous area consisting of distinct patches (_landscape elements_) organized into a mosaic-like pattern
 
 ## A **mosaic** is the patchwork of different types of land cover/elements (e.g., forests, bogs, meadows, lakes, streams, etc.)
 
-## **Patches** of habitat form the landscape
 
 
 ---
@@ -85,6 +84,35 @@ background-size: contain
 ]
 
 ---
+
+# Landscape Ecology
+
+.font200[
+>the science and art of studying and influencing the relationships between spatial pattern and ecological processes across hierachical levels of biological organization and different scales in space and time  
+>            .right[Wu and Hobbs, 2007]
+]
+
+---
+
+# Landscape Structure
+
+## **Landscape structure**: the physical configuration of landscape elements, e.g., patch size distributions, patch dispersion, patch shapes, patch connectivity / isolation, etc.
+
+---
+
+# Patches in the Landscape
+
+.font200[
+- **Patches**: relatively homogenous community  types that differ from their surroundings in structure (e.g., size, shape) and in species composition
+- Patches result from factors: geology, topography, soils, and climate, human activity
+- The area, shape, and orientation of the landscape patches influence:
+  + Habitat suitability
+  + Wind flow
+  + Dispersal of seeds
+  + Movement of animals
+]
+
+---
 class: center
 
 .font200[E.g., Lodgepole pine stand age classes (stand ages since last major fire-disturbance) in Yellowstone National Park]
@@ -93,16 +121,118 @@ class: center
 
 ---
 
-# Patches in the Landscape
+# Patches have edges
 
-.font200[
-- **Patches**: relatively homogenous community  types that differ from their surroundings in structure (e.g., size, shape) and in species composition
-
-- Patches result from factors: geology, topography, soils, and climate, human activity
-
-- **Landscape structure**: the physical configuration of landscape elements, e.g., patch size distributions, patch dispersion, patch shapes,
-patch connectivity / isolation, etc.
-
-
+.pull-left[
+![](figs/edge1.jpg)
 ]
+
+.pull-right[
+![](figs/edge2.jpg)
+]
+
+## Some pathces are stable and permanent (inherent edges) while others are subject to successional changes over time (induced edges)
+
+???
+
+Inherent edges: Natural edges, caused by changes in soil, topography. E.g., eastern North America – deciduous, coniferous edge
+
+Induced edges: May occur where floods or fires have reversed succession. May occur where humans have created patchwork of tilled land interspersed with fence rows and wood lots
+
+---
+
+# Patches have edges
+
+## The height, width, and porosity of borders influence the gradients of wind flow, moisture, temperature, and solar radiation between adjoining patches
+
+![](figs/edge3.png)
+
+---
+
+# Edge effects: negative (generally) effects of a habitat edge on interior conditions
+
+.center[![](figs/edge.jpg)]
+
+---
+
+# Edge effects: negative (generally) effects of a habitat edge on interior conditions
+
+.center[![](figs/edge_effect.jpg)]
+
+
+---
+
+## Some species can only inhabit the interior or core, and some are specifically attracted to the edge
+
+## **Edge species** are restricted exclusively to the edge environment  (e.g. Indigo bunting)
+
+.center[![:scale 90%](figs/edge_sp.jpg)]
+
+---
+background-image: url('figs/edge_sp1.jpg')
+background-position: 50% 50%
+background-size: contain
+class: center, top
+
+# Edge species
+
+---
+background-image: url('figs/edge_sp2.jpg')
+background-position: 50% 50%
+background-size: contain
+class: center, top
+
+# Interior species
+
+---
+background-image: url('figs/edge_sp3.jpg')
+background-position: 50% 50%
+background-size: contain
+class: center, top
+
+# Area-insensitive species
+
+
+---
+
+## The edge effect can also create problems: attracts more predator; restricts dispersal, etc.
+
+![](figs/edge_predation.jpg)
+
+---
+
+# Two patches with same area
+
+.font150[The shape of a habitat reserve matters!  As patches become SMALLER, they become LARGELY EDGE, losing the characteristics of the interior community,	e.g., Brown-headed cowbird]
+
+
+.center[![:scale 50%](figs/edge_area.jpg)]
+
+---
+
+# Habitat Loss & Fragmentation
+
+
+.center[![:scale 75%](figs/landscape_change.jpg)]
+
+86% of habitat lost
+
+???
+
+Fragmentation and isolation of heathland (in England) 40,000 ha to 6000 ha in 218 years
+
+1759: 10 large blocks
+
+1978: 1084 pieces
+ 
+86% of habitat lost. 
+
+---
+
+# Habitat Loss & Fragmentation
+
+
+.center[![:scale 75%](figs/fragmentation.jpg)]
+
+Loss & fragmentation of U. S. old-growth forests
 
