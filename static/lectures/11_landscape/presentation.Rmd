@@ -34,13 +34,6 @@ class: left, center, inverse
 
 
 ---
-
-background-image: url('figs/landscape.jpeg')
-background-position: 50% 50%
-background-size: contain
-class: center, top, inverse
-
----
 background-image: url('figs/madison.jpg')
 background-position: 50% 50%
 background-size: contain
@@ -51,7 +44,12 @@ class: center, top
 
 ## A **mosaic** is the patchwork of different types of land cover/elements (e.g., forests, bogs, meadows, lakes, streams, etc.)
 
+---
 
+background-image: url('figs/landscape.jpeg')
+background-position: 50% 50%
+background-size: contain
+class: center, top, inverse
 
 ---
 background-image: url('figs/landscape2.jpg')
@@ -135,7 +133,7 @@ Extent refers to the size of the study area being considered; e.g., is the lands
 .font150[
 Landscape ecologists often grapple with issues associated with spatial scale
 
-Two important aspect of spatial scale: **grain** and **extent**
+Two important aspect of spatial scale: .blue[**grain**] and .blue[**extent**]
 
 Grain refers to the spatial resolution of a study or data set; e.g., are the data or samples obtained at a resolution of 1 m<sup>2</sup>, 100 m<sup>2</sup> or 1 km<sup>2</sup>?
 
@@ -218,7 +216,7 @@ Induced edges: May occur where floods or fires have reversed succession. May occ
 
 ## Some species can only inhabit the interior or core, and some are specifically attracted to the edge
 
-## **Edge species** are restricted exclusively to the edge environment  (e.g. Indigo bunting)
+## .blue[**Edge species**] are restricted exclusively to the edge environment  (e.g. Indigo bunting)
 
 .center[![:scale 90%](figs/edge_sp.jpg)]
 
@@ -426,5 +424,8 @@ This requires that wild animals are able to travel safely through land adjacent 
 
 ---
 
-# Scaling populations to landscapes (metapopulation)
+## Scaling populations to landscapes (metapopulation)
 
+## Species-area relationships (to be covered in the Macroecology lectures)
+
+## The theory of island biogeography (to be covered in the Macroecology lectures)
