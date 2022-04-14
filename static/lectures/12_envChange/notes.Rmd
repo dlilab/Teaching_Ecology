@@ -1,5 +1,5 @@
 ---
-title: "week 10: Environmental change"
+title: "Environmental change"
 author: "Daijiang Li"
 date: ""
 output:
