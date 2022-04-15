@@ -45,3 +45,14 @@ body { font-family: 'Yanone Kaffeesatz', 'Palatino Linotype', 'Droid Serif', 'Bo
 a {
   text-decoration: underline;
 }
+
+.pull-left2 {
+  float: left;
+  width: 49%;
+}
+.pull-right2 {
+  float: right;
+  width: 49%;
+}
+
+
