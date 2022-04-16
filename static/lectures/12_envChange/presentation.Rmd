@@ -198,7 +198,6 @@ parts per million (ppm)
 
 Mauna Loa Observatory, Hawaii (Scripps UCSD)
 
-Preliminary data released February 4, 2021
 
 
 .font200[
@@ -359,9 +358,9 @@ Sea level will rise even after global temperatures stabilize
 ]
 
 .pull-right[
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sea_level_history_and_projections.svg/1280px-Sea_level_history_and_projections.svg.png)
+![](figs/Sea_level_history_and_projections.png)
 
-![](https://cdn.blog.ucsusa.org/wp-content/uploads/districts-underwater-story-map-screenshot.jpg)
+.center[![:scale 70%](figs/Sea-level-rise-vulnerability.jpg.webp)]
 ]
 
 ---
@@ -370,9 +369,12 @@ Sea level will rise even after global temperatures stabilize
 
 .font200[Hurricane Katrina in 2005 caused over 1800 deaths (~1200 from Louisiana) and $125 billion in damage.]
 
-```{r out.width='60%'}
-knitr::include_graphics('https://www.gfdl.noaa.gov/wp-content/uploads/pix/user_images/tk/mb_science_a.png')
-```
+.center[![:scale 60%](figs/hurricane.png)]
+
+???
+
+Storm intensities should increase as the latent heat of water vapor rises with air temperature
+
 
 ---
 
@@ -399,19 +401,14 @@ a warmer climate may have actually contributed to the extreme cold
 
 # .red[Fire regimes in the US West will change]
 
-```{r out.width = '60%'}
-knitr::include_graphics('https://files.wri.org/s3fs-public/uploads/fires-us-cumulative-burned-area-2020-wri.gif')
-```
+.center[![:scale 60%](figs/fires-us-cumulative-burned-area-2020-wri.gif)]
 
 
 ---
 
 # .red[Fire regimes in the US West will change]
 
-```{r out.width = '60%'}
-knitr::include_graphics('https://files.wri.org/s3fs-public/uploads/fires-emissions-climate-feedback-loop-wri.png')
-```
-
+.center[![:scale 60%](figs/fires-emissions-climate-feedback-loop-wri.png)]
 
 
 ???
@@ -422,7 +419,7 @@ Higher temperatures draw moisture out of live and dead trees and brush, making t
 
 # .red[Ocean Warming and Acidification]
 
-![](https://www.noaa.gov/sites/default/files/styles/scale_crop_1120x534/public/thumbnails/image/pmel-oa-imageee_landscape.jpg?itok=iPSaTM4w)
+![](figs/ocean_acid.jpg)
 
 .font200[A problem for ocean ecosystems and commercial industries like oyster farms]
 
@@ -432,6 +429,44 @@ less carbonate ions (co32-) to build shells
 
 shells and skeletons can even begin to dissolve
 
+---
+background-image: url('figs/ocean_acid2.png')
+background-position: 50% 50%
+background-size: cover
+class: center, top
+
+# .red[Ocean Warming and Acidification]
+
+---
+
+# What is this??
+
+![:scale 92%](figs/deadzone.png)
+
+
+???
+
+https://www.epa.gov/ms-htf/northern-gulf-mexico-hypoxic-zone
+
+---
+background-image: url('figs/mississippi-river-watershed-map-rs.jpeg')
+background-position: 50% 50%
+background-size: cover
+class: center, top
+
+---
+background-image: url('figs/o2.png')
+background-position: 50% 50%
+background-size: cover
+class: center, top
+
+---
+
+# Spreading dead zones
+
+![](figs/spreading_deadzone.png)
+
+.right[Diaz and Rosenberg, Science, 2008]
 ---
 
 # .red[Species: adjust, adapt, move, die]
@@ -443,7 +478,10 @@ shells and skeletons can even begin to dissolve
 .pull-right[
 .font200[.green[Shifts in phenology]]
 
-![](https://images.theconversation.com/files/293397/original/file-20190920-135113-m2otyv.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip)
+![](figs/cherry.jpeg)
+
+.font200[Plants and animals are flowering, mating, and migrating earlier (Root et al. 2001)]
+
 ]
 
 ---
@@ -459,7 +497,7 @@ Adaption is necessary for species' long-term persistence as they struggle to sur
 .pull-right[
 .font200[.green[Adaption by natural selection]]
 
-![](https://evolution.berkeley.edu/admin/media/2/31538_evo_resources_resource_image_281_original.gif)
+![](figs/beetles_mech4.gif)
 ]
 
 ---
