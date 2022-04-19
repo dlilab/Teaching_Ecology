@@ -50,6 +50,9 @@ menu:
     - name: Schedule & Materials
       url: /schedule_materials/
       weight: 4
+    - name: Extra Credit
+      url: /iNat/
+      weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark
