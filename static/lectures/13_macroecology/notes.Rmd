@@ -83,7 +83,7 @@ _climatic stability hypothesis_: Fluctuating environments tend to cause species 
 
 The mid-domain effect doesn't mean that we shouldn't look for latitudinal diversity relationships, but we should recognize that they could be the result of randomness. Teasing the randomness from the pattern sometimes requires the use of a _null model_. In the case of the mid-domain effect, a null model would correspond to shuffling species ranges around and measuring the strength and variation in the resulting latitudinal diversity relationship. We also talked about null models a bit when we discussed ecological networks (specifically the importance of a single node to a property of the entire network). 
 
-### What is the theory of island biogeography?
+# What is the theory of island biogeography?
 
 As discussed above with respect to patch occupancy in metapopulations, the _theory of island biogeography_ attempts to explain the colonization and extinction of species (and subsequently the species richness of islands) as a function of island area and distance from the mainland. These two things influence the number of species that can colonize and persist on a given island, as distance from a mainland source is proportional to species dispersal and colonization probability and island area controls the population size attainable by a given species, and thus influences extinction rate. That is, the theory is based on the relationship between distance from the mainland (colonization rate) and island area (extinction rate) in determining the number of species that an island contains. 
 This is fundamentally related to a metapopulation, as the structure of the landscape is the same. That is, a metapopulation consists of habitat patches connected by dispersal but within an inhospitable landscape. The theory of island biogeography assumes the same, originally developed to explain the number of species on isolated islands. 
@@ -95,7 +95,7 @@ This assumes that all islands are reachable by every species in the community wi
 knitr::include_graphics("figs/etib.png")
 ```
 
-### Species-area relationships
+# Species-area relationships
 
 One clear extension, and honestly the original purpose of island biogeography theory, is the study of species-area relationships. The idea here is that increasing geographic area results in a greater number of unique species able to occupy the patch. 
 
@@ -107,7 +107,7 @@ where $S$ is the number of species, $A$ is patch area, $z$ describes the shape o
 
 
 ```{r fig3, out.width = '100%'}
-knitr::include_graphics("figs/sar.png")
+knitr::include_graphics("figs/sar.svg")
 ```
 
 
