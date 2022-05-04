@@ -42,5 +42,7 @@ If you use an iPhone, you can go to https://www.inaturalist.org/home once you ha
 
 I will calculate your extra score using the **0.1 point per species rule** (maximum at 10, but don't let this stop your recording!). If you recorded 50 species, you can get 5 points. **After done, you need to email me your iNaturalist account name and a screenshot of the summary of your observations (with number of observations, number of species, etc.) so that I can calculate your extra points**. 
 
+This extra scores will be added to your **total scores** before taking the average to get your final score. For example, if your total score after dropping your lowest exam score (3 exams + final project) is 370, and if you get all 10 extra points, then your total score would be 370 + 10 = 380; and your final score would be 380/4 = 95. 
+
 Again, this is optional. You don't need to do this if you decide to not have this extra credit. But wouldn't it be nice to go outside while can contribute to community/citizen science programs and earn some extra credit??
 
