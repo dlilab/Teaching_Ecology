@@ -5,7 +5,7 @@ title: Extra Credit
 
 Adter discussion, **we decide to offer 10 points of extra credit for all students in spring 2022**. To earn these extra points, students need to participant the 2022 [city nature challenge](https://citynaturechallenge.org). City nature challenge provides an exciting way to encourage us to connect with nature and to put our amazing biodiversity in cities on maps. This year's city nature challenge takes place in 2 parts: 
 
-- **April 29 to May 2: taking pictures of wilf plants and animals**
+- **April 29 to May 2: taking pictures of wild plants and animals**
 - May 3 to May 8: identifying what was found
 
 The extra credit will be related with the first part. Before going out during April 29 to May 2, you can download and install the iNaturalist App on your phone from App stores ([Apple AppStore](https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8) or [Google Play](https://play.google.com/store/apps/details?id=org.inaturalist.android)), open an account, sign in, and then you are ready. During this time window (not before or after), go out and take observations with your phone and upload to iNaturalist. All observations during this time period will be automatically accounted for by the city nature challenge project.
