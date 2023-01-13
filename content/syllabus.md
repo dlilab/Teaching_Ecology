@@ -32,9 +32,9 @@ Email address: dli30@lsu.edu
 
 Tu/Th 9:00-10:20 AM  
 Class location: [William's 202](https://www.google.com/maps/place/Williams+Hall/@30.4124295,-91.179734,17.11z/data=!4m5!3m4!1s0x8626a7217676d7ad:0xcf801c0f1a3d0ab8!8m2!3d30.4104184!4d-91.1777712) (lectures will be live-streamed and recorded)  
-Zoom link: https://lsu.zoom.us/j/97210590372  
+Zoom link: https://lsu.zoom.us/j/98069842998    
 Office room: LSB 125  
-Office hours: Tuesday 12-1pm or by appointment (virtual using the course Zoom link)
+Office hours: Tuesday 12-1pm or by appointment
 
 ## Pre-requisites
 
@@ -46,16 +46,14 @@ There is no required textbook, but readings will be provided from the primary li
 
 ## Vaccination statement
 
-Below is the standardized LSU message regarding the COVID-19 vaccine. Vaccination has been framed as a freedom/political issue (why does this not happen with MMR vaccine or tetanus?), so here we are. Almost 1 million cases (there are around 4.6 million people in Louisiana) and around 15k deaths in Louisiana alone (over 1100 in EBR parish), and this is the messaging that I (as a representative of LSU) can provide. 
+Below is the standardized LSU message regarding the COVID-19 vaccine. 
 
 > LSU strongly encourages all students, faculty and staff to get vaccinated for COVID-19. Visit www.lsu.edu/roadmap/vaccines/ to learn how to get vaccinated on campus. Vaccination helps keep our campus community safe, helps protect those among us who are most vulnerable to COVID-19, and is our path back to more normal operations and the full college experience that our students deserve. 
-
-I will enforce masking in class (unless LSU removed this requirement), but it's a mask, not a force field. Anybody not wearing a mask that covers their nose and face will be asked to leave. 
 
 
 ## Syllabus Subject to Change
 
-This syllabus represents my current plans and objectives. As the semester progresses, those plans may need to change to enhance the classes learning opportunity. Such changes, communicated clearly, are not unusual (especially during a pandemic) and should be expected. Syllabus and grades will be available on Moodle. But the most up-to-date and current syllabus will always be available on the [course web page](/).
+This syllabus represents my current plans and objectives. As the semester progresses, those plans may need to change to enhance the classes learning opportunity. Such changes, communicated clearly, are not unusual and should be expected. Syllabus and grades will be available on Moodle. But the most up-to-date and current syllabus will always be available on the [course web page](/).
 
 
 ## Course Communications

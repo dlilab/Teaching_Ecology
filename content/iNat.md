@@ -3,7 +3,7 @@ date: "2022-04-13"
 title: Extra Credit 
 ---
 
-Adter discussion, **we decide to offer 10 points of extra credit for all students in spring 2022**. To earn these extra points, students need to participant the 2022 [city nature challenge](https://citynaturechallenge.org). City nature challenge provides an exciting way to encourage us to connect with nature and to put our amazing biodiversity in cities on maps. This year's city nature challenge takes place in 2 parts: 
+After discussion, **we decide to offer 10 points of extra credit for all students in spring 2022**. To earn these extra points, students need to participant the 2022 [city nature challenge](https://citynaturechallenge.org). City nature challenge provides an exciting way to encourage us to connect with nature and to put our amazing biodiversity in cities on maps. This year's city nature challenge takes place in 2 parts: 
 
 - **April 29 to May 2: taking pictures of wild plants and animals**
 - May 3 to May 8: identifying what was found
@@ -25,7 +25,7 @@ In addition, I have also created a project named as [**LSU BIOL 4253 Principles 
     3. Make sure the location information is correct
     4. If you can select the `LSU BIOL 4253 Principles of Ecology` project, do it. Otherwise, no worries
 
-***Only observations that you personally took around Baton Rouge during the time period specified above will count. No photos from your friends, relevant, internet, etc.*** 
+***Only observations that you personally took around Baton Rouge during the time period specified above will count. No photos from your friends, relevant, internet, etc. Images downloaded from internet will be presented as evidence of plagiarism and will be reported to the University.*** 
 
 ## Annotations
 
