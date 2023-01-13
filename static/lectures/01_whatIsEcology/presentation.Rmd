@@ -39,10 +39,6 @@ class: center, top
 
 ## https://www.dlilab.com 
 
----
-class: center, middle
-
-# .font200[zoom breakout room?]
 
 ---
 class: center, middle
