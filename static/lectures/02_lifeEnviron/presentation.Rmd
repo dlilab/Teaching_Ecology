@@ -159,7 +159,7 @@ class: right, middle
 
 # Major Determinants of Global Climate
 
-### 3. Rotation of Earth about Earth’s axis. Creates **Coriolis effects** (conservartion of momentum)
+### 3. Rotation of Earth around Earth’s axis. Creates **Coriolis effects** (conservartion of momentum)
 
 .pull-left[
 ![](figs/coriolis_1.png)
@@ -323,6 +323,13 @@ Soils rich in organic matter (especially from proliferation of grass roots)
 
 ]
 ]
+
+---
+background-image: url('figs/grassroots.jpg')
+background-position: 0% 50%
+background-size: contain
+class: center, top
+
 
 ---
 
