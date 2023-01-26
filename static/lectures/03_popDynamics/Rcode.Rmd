@@ -5,17 +5,17 @@ includes:
   in_header:
     - \usepackage{lmodern}
 output:
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
   html_document:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
     highlight: tango
     theme: journal
-  pdf_document:
-    fig_caption: yes
-    fig_height: 6
-    fig_width: 6
-    toc: yes
 ---
 
 
@@ -165,8 +165,8 @@ Alright. So now we can look at the actual dynamics across many generations.
 
 
 ```{r}
-logisticDynamics <- function(n,r,k, steps=100){
-  ret <- c()
+logisticDynamics <- function(n, r, k, steps = 100){
+  ret <- c() 
   ret[1] <- n
   if(length(r) == 1){
     r <- rep(r, steps)
@@ -193,13 +193,13 @@ plot(1:stps,
 # lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='firebrick')
 #})
 
-x = sapply(seq(5,30,by=1), function(x){
+for(x in seq(30, 50,by=1)){
  lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='dodgerblue')
-})
+}
 
-x = sapply(seq(5,30,by=1), function(x){
- lines(logisticDynamics(n=x, r=rep(c(0.5,1.5),5), k=30, steps=stps), col='firebrick')
-})
+for(x in seq(0,30,by=1)){
+ lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='firebrick')
+}
 
 ```
 
@@ -220,13 +220,13 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
-x = sapply(seq(1,25,by=1), function(x){
+for(x in seq(1,25,by=1)){
  lines(logisticDynamics(n=x, r=0, k=30, steps=stps), col='firebrick')
-})
+}
 
-x = sapply(seq(35,100,by=5), function(x){
+for(x in seq(35,100,by=5)){
  lines(logisticDynamics(n=x, r=0, k=30, steps=stps), col='dodgerblue')
-})
+}
 
 ```
 
@@ -243,13 +243,13 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
-x = sapply(seq(1,25,by=1), function(x){
+for (x in seq(1,25,by=1)){
  lines(logisticDynamics(n=x, r=1.5, k=30, steps=stps), col='firebrick')
-})
+}
 
-x = sapply(seq(35,100,by=5), function(x){
- lines(logisticDynamics(n=x, r=1.5, k=30, steps=stps), col='dodgerblue')
-})
+for(x in seq(35, 100, by = 5)){
+  lines(logisticDynamics(n = x, r = 1.5, k = 30, steps = stps), col = 'dodgerblue')
+}
 ```
 
 
@@ -273,13 +273,13 @@ plot(1:stps,
   ylab='Population size', 
   col=1)
 
-x = sapply(seq(1,25,by=1), function(x){
+for(x in seq(1,25,by=1)){
  lines(logisticDynamics(n=x, r=2, k=30, steps=stps), col='firebrick')
-})
+}
 
-x = sapply(seq(35,100,by=5), function(x){
+for(x in seq(35,100,by=5)){
  lines(logisticDynamics(n=x, r=2, k=30, steps=stps), col='dodgerblue')
-})
+}
 ```
 
 (between 3 and 3.449 -- oscillates between 2 values)
@@ -297,9 +297,9 @@ plot(1:stps,
   col=1)
 
 
-x = sapply(seq(1,100,by=5), function(x){
+for(x in seq(1,100,by=5)){
  lines(logisticDynamics(n=x, r=3.2, k=30, steps=stps), col='firebrick')
-})
+}
 
 ```
 

@@ -76,7 +76,7 @@ where $r$ is equal to $b$ - $d$ (**births - deaths**), where $b$ and $d$ are per
 
 $$ N_{t} = N(0)e^{rt} $$ 
 
-Where $N(0)$ is the initial population size, $r$ is the instantaneous rate of increase, and $t$ is the number of timesteps. This looks quite similar to the discrete time case, except the growth rate is slightly different. This can also be used to project the expected population growth over time, where $t$ can be any number greater than 1. 
+Where $N(0)$ is the initial population size, $r$ is the instantaneous rate of increase, and $t$ is the number of time steps. This looks quite similar to the discrete time case, except the growth rate is slightly different. This can also be used to project the expected population growth over time, where $t$ can be any number greater than 1. 
 
 $$ r = ln(\lambda) $$ 
 

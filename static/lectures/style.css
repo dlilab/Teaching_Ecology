@@ -2,6 +2,24 @@
 
 body { font-family: 'Yanone Kaffeesatz', 'Palatino Linotype', 'Droid Serif', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
 
+/* .remark-slide-content {
+  font-size: 18px;
+} 
+*/
+
+/* Block math */ 
+.mjx-math {
+    font-size: 110%;
+}
+
+/* Block math 
+   Only this is unique to block (display) math
+*/
+.MJXc-display {
+    font-size: 110% !important;
+}
+
+
 .font120 {
   font-size: 120%;
 }
@@ -55,4 +73,6 @@ a {
   width: 49%;
 }
 
-
+h4 {
+  font-size: 150%;
+}
