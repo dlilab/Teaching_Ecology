@@ -5,17 +5,17 @@ includes:
   in_header:
     - \usepackage{lmodern}
 output:
-  pdf_document:
-    fig_caption: yes
-    fig_height: 6
-    fig_width: 6
-    toc: yes
   html_document:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
     highlight: tango
     theme: journal
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
 ---
 
 
@@ -348,13 +348,17 @@ projMatrix <- matrix(
   byrow = TRUE
 )
 
+projMatrix
+
 abund0 <- matrix(c(20, 20, 20), ncol = 1)
+
+abund0
 ```
 
 Simulate one generation into the future.
 
 ```{r}
-abund1 <- projMatrix %*% abund0 
+(abund1 <- projMatrix %*% abund0)
 ```
 
 Simulate one more generation 
@@ -375,8 +379,6 @@ getStageDynamics <- function(projMatrix, abund, steps=100){
   return(ret)
 }
 ```
-
-
 
 
 ```{r}

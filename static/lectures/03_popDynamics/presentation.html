@@ -80,30 +80,34 @@ class: center, top
 
 
 ---
+class: largerFont
+
 
 # Exponential growth
 
 ## Discrete model
 
-#### The simplest model of population dynamics is based on an exponential increase in population size given a positive growth rate. That is, the population at the next time point `\(N_{t+1}\)` is based on the population size at the current time `\(N_{t}\)` times the .red[finite rate of increase] of the population (λ).
+The simplest model of population dynamics is based on an exponential increase in population size given a positive growth rate. That is, the population at the next time point `\(N_{t+1}\)` is based on the population size at the current time `\(N_{t}\)` times the .red[finite rate of increase] of the population (λ).
 
 `$$N_{t+1} = N_t + r_dN_t = (1 + r_d)N_t = \lambda N_t$$` 
 
-#### This means that each individual produces `\(r_d\)` (.red[discrete growth factor]) offspring per timestep (generation), which then go on to produce `\(r_d\)` offspring. The issue with this model is that there is nothing to stop it, so the time series of the population size quickly becomes exponential (as we'll see in the coding demonstration). 
+This means that each individual produces `\(r_d\)` (.red[discrete growth factor]) offspring per timestep (generation), which then go on to produce `\(r_d\)` offspring. The issue with this model is that there is nothing to stop it, so the time series of the population size quickly becomes exponential (as we'll see in the coding demonstration). 
 
 ---
+class: largeFont
 
 # Exponential growth
 
 ## Continuous model
 
-#### A discrete model makes sense when this assumption matches the species' biology. That is, if generation time can be bounded within some time window, then a discrete model might capture the relevant dynamics well. Let's consider a system where we want that time window to be incredibly small.
+A discrete model makes sense when this assumption matches the species' biology. That is, if generation time can be bounded within some time window, then a discrete model might capture the relevant dynamics well. Let's consider a system where we want that time window to be incredibly small.
 
 $$ \frac{dN}{dt} = rN $$ 
 
-#### where `\(r\)` is equal to `\(b\)` - `\(d\)` (**births - deaths**), where `\(b\)` and `\(d\)` are per capita measures (births or deaths per individual per unit time). This `\(r\)` is the .red[_instantaneous rate of increase_]. When `\(r &lt; 0\)`, the population decreases towards 0. When `\(r &gt; 0\)` the population increases exponentially (essentially geometrically, but in continuous time). 
+where `\(r\)` is equal to `\(b\)` - `\(d\)` (**births - deaths**), where `\(b\)` and `\(d\)` are per capita measures (births or deaths per individual per unit time). This `\(r\)` is the .red[_instantaneous rate of increase_]. When `\(r &lt; 0\)`, the population decreases towards 0. When `\(r &gt; 0\)` the population increases exponentially (essentially geometrically, but in continuous time). 
 
 ---
+class: largeFont
 
 # Exponential growth
 
@@ -111,15 +115,15 @@ $$ \frac{dN}{dt} = rN $$
 
 $$ \frac{dN}{dt} = rN $$ 
 
-#### This equation can be simplified back to discrete time, and we see the population size at time _t_ is:
+This equation can be simplified back to discrete time, and we see the population size at time _t_ is:
 
 
 $$ N_{t} = N_0e^{rt} $$ 
 
 
-#### Where `\(N_0\)` is the initial population size, `\(r\)` is the instantaneous rate of increase, and `\(t\)` is the number of time steps. 
+Where `\(N_0\)` is the initial population size, `\(r\)` is the instantaneous rate of increase, and `\(t\)` is the number of time steps. 
 
-#### This can also be used to project the expected population growth over time, where `\(t\)` can be any number greater than 1. 
+This can also be used to project the expected population growth over time, where `\(t\)` can be any number greater than 1. 
 
 ---
 class: middle
@@ -168,7 +172,7 @@ $$ r = ln(\lambda) $$
 
 # Assumptions of the exponential model:
 
-.font200[
+.font180[
 + No immigration or emigration
 + Constant `\(r\)` (b-d); which means unlimited resources
 + No age, size, or genetic structure (all individuals are functionally equivalent)
@@ -177,13 +181,13 @@ $$ r = ln(\lambda) $$
 
 --
 
-.font200[Exponential growth model forms the cornerstone of population density. Even though no population can increase exponentially forever, all populations have the .red[_potential_] for exponential growth.]
+.font180[Exponential growth model forms the cornerstone of population density. Even though no population can increase exponentially forever, all populations have the .red[_potential_] for exponential growth.]
 
 ---
 
 # Logistic growth
 
-.font200[
+.font180[
 
 “No population can increase in size forever.”
 
@@ -196,27 +200,29 @@ It may be more realistic to assume that populations intrinsically limit themselv
 
 # Exponential growth vs. Logistic growth
 
-&lt;img src="figs/logo.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+![](figs/logo.jpg)
 
 
 ---
+class: largerFont
 
 # Logistic growth
 
 ## Discrete model
 
-#### In the discrete model, we see that the population still grows at rate `\(\lambda\)`, but overall population size is discounted by a scaling term which relates the population size ( `\(N_t\)` ) to an upper threshold. This threshold is the .red[**carrying capacity**] ( `\(K\)` ), which is the maximum sustainable population size, given potentially limiting resource such as resources, space, etc.
+In the discrete model, we see that the population still grows at rate `\(\lambda\)`, but overall population size is discounted by a scaling term which relates the population size ( `\(N_t\)` ) to an upper threshold. This threshold is the .red[**carrying capacity**] ( `\(K\)` ), which is the maximum sustainable population size, given potentially limiting resource such as resources, space, etc.
 
 `$$N_{t+1} = N_{t} + (ln(\lambda) \times N_{t} \times (1 - \frac{N_t}{K}))$$`
 
 
 ---
+class: largerFont
 
 # Logistic growth
 
 ## Continuous model
 
-#### In the continuous model, time step size goes to 0 in the limit (i.e., the time steps are really tiny). When the population size exceeds `\(K\)` (for either discrete or continuous models) population growth becomes negative, leading to a tendency for the system to go to `\(K\)`. However, this is sensitive to population growth rate ( `\(\lambda\)` or `\(r\)`), as large growth rates can lead to complex dynamics, including damped oscillations, limit cycles, and chaos. 
+In the continuous model, time step size goes to 0 in the limit (i.e., the time steps are really tiny). When the population size exceeds `\(K\)` (for either discrete or continuous models) population growth becomes negative, leading to a tendency for the system to go to `\(K\)`. However, this is sensitive to population growth rate ( `\(\lambda\)` or `\(r\)`), as large growth rates can lead to complex dynamics, including damped oscillations, limit cycles, and chaos. 
 
 
 $$ \frac{dN}{dt} = rN \left[1- \frac{N}{K}\right];  r, K &gt; 0$$
@@ -251,22 +257,23 @@ On top of the assumptions of the exponential growth,
 ]
 
 ---
+class: largerFont
 
 # Logistic growth
 
-#### When the population size exceeds `\(K\)` (for either discrete or continuous models) population growth becomes negative, leading to a tendency for the system to go to `\(K\)`. However, this is sensitive to population growth rate ( `\(\lambda\)` or `\(r\)`), as large growth rates can lead to complex dynamics, including damped oscillations, limit cycles, and chaos. 
+When the population size exceeds `\(K\)` (for either discrete or continuous models) population growth becomes negative, leading to a tendency for the system to go to `\(K\)`. However, this is sensitive to population growth rate ( `\(\lambda\)` or `\(r\)`), as large growth rates can lead to complex dynamics, including damped oscillations, limit cycles, and chaos. 
 
 .pull-left[
 
 ### Equilibria:
 
-.font150[N = K, 0 &lt; r &lt; 3.5 (stable)]
+N = K, 0 &lt; r &lt; 3.5 (stable)
 
-.font150[N = 0, 0 &lt; r &lt; 3.5 (unstable)] 
+N = 0, 0 &lt; r &lt; 3.5 (unstable)
 
-.font150[N = K, r &lt; 0 (unstable)] 
+N = K, r &lt; 0 (unstable)
 
-.font150[N = 0, r &lt; 0 (stable)] 
+N = 0, r &lt; 0 (stable)
 ]
 
 
@@ -275,20 +282,225 @@ On top of the assumptions of the exponential growth,
 ]
 
 ---
+class: largerFont
 
 # Allee effect 
 
-#### `\(b\)` or `\(d\)` is non-linear, resulting in a population growth rate `\(r\)` which depends on `\(N_{t}\)`. 
+`\(b\)` or `\(d\)` is non-linear, resulting in a population growth rate `\(r\)` which depends on `\(N_{t}\)`. 
 
-#### Allee effect is the positive correlation between population size `\(N_{t}\)` and population growth rate `\(r\)`. 
+Allee effect is the positive correlation between population size `\(N_{t}\)` and population growth rate `\(r\)`. 
 
-#### Allee effects are important when population sizes become small, as the density dependence can cause a situation where population growth rate actually drops below 0 ( `\(r &lt; 0\)`). 
+Allee effects are important when population sizes become small, as the density dependence can cause a situation where population growth rate actually drops below 0 ( `\(r &lt; 0\)`). 
 
 ---
 
 # Allee effect 
 
 &lt;img src="figs/allee.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+class: largerFont
+
+# Structured populations
+
+The above models assume that all individuals are functionally equivalent. That is, individuals contribute to overall reproductive output and population growth regardless of age, body size, sex, etc. But this is not really true for most natural populations. Most of the time, very young individuals won't reproduce, as they are not reproductively mature. This creates a situation where two populations containing the same number of individuals may have strikingly different dynamics, as the distribution of individuals' ages influences population growth rates. This occurs either through differences in birth rates (as noted above), or as a result of different death rates (e.g., young and old individuals have higher mortality risk than middle-aged).
+
+---
+
+# Life table
+
+.font150[Originally designed for insurance companies, this is a way to track demographic rates through time, partitioning things by the age of the organism. ]
+
+![](figs/life_table.png)
+
+---
+
+# Life table
+
+
+Table: Life table of a hypothetic population.
+
+| age (x)| S(x)| b(x)| l(x)=S(x)/S(0)| g(x)=l(x+1)/l(x)| l(x)b(x)| l(x)b(x)x|
+|-------:|----:|----:|--------------:|----------------:|--------:|---------:|
+|       0|  500|    0|            1.0|             0.80|      0.0|       0.0|
+|       1|  400|    2|            0.8|             0.50|      1.6|       1.6|
+|       2|  200|    3|            0.4|             0.25|      1.2|       2.4|
+|       3|   50|    1|            0.1|             0.00|      0.1|       0.3|
+|       4|    0|    0|            0.0|               NA|      0.0|       0.0|
+
+The term `\(S(x)\)` refers to the number of individuals from a particular cohort that are still alive at age `\(x\)` (.red[**cohort survival**]). 
+
+The term `\(b(x)\)` represents the per-capital birth rate for females of age `\(x\)`. This is the number of female offspring generated from one female individual of age `\(x\)`. For example `\(b(6) = 3\)` would indicate that a female of age 6 will give birth to an _average_ of 3 female offspring. `\(b(x)\)` also is referred to as .red[**fecundity schedule**].
+
+The term `\(l(x)\)` represents the probability that an individual survives from age 0 (birth) to the *beginning* of age `\(x\)`. This is called .red[**survival rate** or survival schedule]. `\(l(x)=S(x)/S(0)\)`
+
+The term `\(g(x)\)` is the probability that an individual of age `\(x\)` survives to age `\(x+1\)` (.red[**survival probability**]).
+
+---
+class: center
+
+# Survivorship curves
+
+![:scale 85%](figs/survivorship.jpg)
+
+---
+class: largerFont
+
+# Life Table
+
+Life table gives us a good idea of how age or life stage can influence reproductive output and survival. 
+
+`\(l(x)\)` (survival rate) and `\(b(x)\)` (fecundity rate) are the basis of all our life-table calculations. If we know `\(l(x)\)` and `\(b(x)\)`, we can calculate the intrinsic growth rate `\(r\)`. To do that, we need to calculate two more number first: the .red[net reproductive rate] `\(R_0\)` and the generation time `\(G\)`.
+
+`\(R_0\)` corresponds to the average number of female offspring that would be born to each female member of a population going from birth to death following to life table. 
+
+`$$R_0 = \sum^k_{x=0}l(x)b(x)$$`
+
+---
+
+# Life table
+
+
+| age (x)| S(x)| b(x)| l(x)=S(x)/S(0)| g(x)=l(x+1)/l(x)| l(x)b(x)| l(x)b(x)x|
+|-------:|----:|----:|--------------:|----------------:|--------:|---------:|
+|       0|  500|    0|            1.0|             0.80|      0.0|       0.0|
+|       1|  400|    2|            0.8|             0.50|      1.6|       1.6|
+|       2|  200|    3|            0.4|             0.25|      1.2|       2.4|
+|       3|   50|    1|            0.1|             0.00|      0.1|       0.3|
+|       4|    0|    0|            0.0|               NA|      0.0|       0.0|
+
+.pull-left[
+`$$R_0 = \sum^k_{x=0}l(x)b(x)$$`
+]
+
+.pull-right[
+$$ R_{0} = 0 + 1.6 + 1.2 + 0.1 + 0 = 2.9 $$
+
+`\(R_0 &gt; 1\)`? `\(R_0 = 1\)`?  `\(R_0 &lt; 1\)`? 
+]
+
+.font150[
+
+`\(R_0\)` is very _similar_ to `\(\lambda\)` in terms of description. But, `\(r \neq ln(R_0)\)` because `\(R_0\)` measures increase of population as a function of _generation time_.
+
+]
+
+---
+
+# Genetation time
+
+.font180[ 
+
+`\(G\)` is the generation time, which is quantified as the average age of parents of all offspring produced in a single cohort. It can be calculated as
+
+] 
+
+
+`$$G = \frac{\Sigma_{x=0}^{k} l(x)b(x)x}{\Sigma_{x=0}^{k} l(x)b(x)}$$`
+
+.font150[ _G = ?_ in the table below?]
+
+
+| age (x)| S(x)| b(x)| l(x)=S(x)/S(0)| g(x)=l(x+1)/l(x)| l(x)b(x)| l(x)b(x)x|
+|-------:|----:|----:|--------------:|----------------:|--------:|---------:|
+|       0|  500|    0|            1.0|             0.80|      0.0|       0.0|
+|       1|  400|    2|            0.8|             0.50|      1.6|       1.6|
+|       2|  200|    3|            0.4|             0.25|      1.2|       2.4|
+|       3|   50|    1|            0.1|             0.00|      0.1|       0.3|
+|       4|    0|    0|            0.0|               NA|      0.0|       0.0|
+
+---
+class: middle
+
+.font180[
+
+From `\(R_0\)` and `\(G\)`, we can compute `\(r\)` and `\(\lambda\)`
+
+
+$$ r \approx \frac{ln(R_0)}{G} $$
+
+Calculate `\(r\)` for the example in the table above:
+
+$$ \lambda = e^{r} $$
+
+]
+
+---
+class: largerFont
+
+# Structured populations
+
+So how do we model these structured populations? We could break the populations down into stages, and use the models described above for each life stage. Here is an example for a stage-structured population consisting of juveniles ( `\(J\)`), teenagers ( `\(T\)`), and adults ( `\(A\)`). Here, we can track the dynamics of each stage independently, as below. What's wrong with this? It doesn't explicitly consider the inherent connections between the different stages. .red[_So it tracks population growth, but not the transitions between classes_]. 
+
+.pull-left[
+`$$J_{t+1} = \lambda_{J} * J_t$$`
+
+`$$T_{t+1} = \lambda_{T} * T_t$$`
+
+`$$A_{t+1} = \lambda_{A} * A_t$$`
+]
+
+.pull-right[
+Then, `$$N_{t} = J_{t} + T_{t} + A_{t}$$`
+]
+
+---
+
+# Leslie matrix
+
+.font180[
+We can account for population flow explictly by having some survival term which tracks the transition of juveniles to teenagers, and teenagers to adults. How do we incorporate this? We could set up a system of equations, or we could use *matrix modeling*, which essentially sets up a system of equations, but in a nice way.
+]
+
+---
+
+# Leslie matrix
+
+.font150[
+A Leslie matrix describing the survival and fecundity relationships between life stages (_J_, _T_, and _A_)
+]
+
+.center[![:scale 65%](figs/matrix.png)]
+
+.font150[
+
+Elements of the square matrix correspond to the production of (row) by (column). These are transitions between lifestages. This matrix is called a .red[_Leslie matrix_]. Here, we have fecundity `\(F_{i}\)`, and stage transition rates ( `\(P_{i,j}\)`). It is important to note that fecundity is different from birth rates discussed earlier. Here, fecundity captures both survival _and_ birth rate.
+
+]
+
+
+---
+
+# Leslie matrix
+
+.font180[So we can use the transition matrix to simulate stage-structured population dynamics. How we do this is by using matrix multiplication, as follows. We have a 1 column matrix containing the initial population sizes for all life stages. ]
+
+![](figs/leslie_m.png)
+
+.font180[
+
+where `\(\mathbf{N}\)` is the population size matrix at time `\(t\)` and `\(\mathbf{M}\)` is the Leslie matrix, to yield the resulting population size at time `\(t+1\)`. 
+
+]
+
+---
+
+# Matrix multiplication
+
+![](figs/leslie_m.png)
+
+![](figs/leslie_m2.png)
+
+---
+
+# Example
+
+![](figs/leslie_example.png)
+
+---
+class: inverse, center, middle
+
+#  [R code demo](./Rcode.html)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
