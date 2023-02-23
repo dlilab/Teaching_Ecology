@@ -11,7 +11,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: ["https://platform.twitter.com/widgets.js", "../macro.js"]
+      beforeInit: ["../macro.js"]
 ---
 class: left, middle
 
@@ -419,10 +419,11 @@ class: center, middle, inverse
 ]
 
 ---
+class: largeFont
 
 # What makes a good competitor?
 
-### One idea is that the winner of competition is the amount of resource necessary for the species to have a positive growth rate. This is often referred to as $R^*$ .blue[(R star) from Tilman's resource-consumer model], and can be used to explain the maintenance of species diversity in a community. The idea is that a species with a lower $R^*$ will outcompete a species with a higher $R^*$, especially as resources become limited.
+One idea is that the winner of competition is the amount of resource necessary for the species to have a positive growth rate. This is often referred to as $R^*$ .blue[(R star) from Tilman's resource-consumer model], and can be used to explain the maintenance of species diversity in a community. The idea is that a species with a lower $R^*$ will outcompete a species with a higher $R^*$, especially as resources become limited.
 
 .pull-left[
 $$\frac{dN}{dt} = N_{j}(a_{j}R - d)$$
@@ -455,12 +456,12 @@ Let's add competition to it through direct interactions and extend it to 2 speci
 
 # The Lotka-Volterra model
 
-.font150[
+.font130[
 $$\frac{dN_{1}}{dt} = r_{1}N_{1}\left(1-\frac{N_{1} + \alpha_{12}N_{2}}{K_{1}} \right)$$
 ]
 
 
-.font150[
+.font130[
 $$\frac{dN_{2}}{dt} = r_{2}N_{2}\left(1-\frac{N_{2} + \alpha_{21}N_{1}}{K_{2}} \right)$$
 ]
 
@@ -501,10 +502,14 @@ class: center, top
 
 .font150[
 The abundance of species 1 is plotted on the x-axis and the abundance of species 2 is plotted on the y-axis
+]
+]
 
-For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). These lines are called .red[zero net growth isoclines].
-]
-]
+---
+
+# Zero net growth isoclines
+
+.font200[For each species within this space, there is a straight line which defines the equilibrium density of the species depending on starting conditions (i.e., the abundance of both species). These lines are called .red[zero net growth isoclines].]
 
 ---
 background-image: url('figs/lv_1.png')
