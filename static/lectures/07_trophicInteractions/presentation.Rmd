@@ -11,7 +11,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: ["https://platform.twitter.com/widgets.js", "../macro.js"]
+      beforeInit: ["../macro.js"]
 ---
 class: left, middle
 
@@ -150,7 +150,7 @@ class: center
 
 --
 
-.font150[
+.font130[
 $aR$ is the .red[functional response] of the predator (rate of prey capture as a function of prey abundance); in this case linear, i.e., prey capture increases at a constant rate as prey density increases
 
 $caC$ reflects the numerical response of the predator population – the per capita growth rate of the predator pop. as a function of the prey pop.
@@ -201,7 +201,7 @@ C* & = \frac{r}{a}
 --
 
 .pull-left[
-.font150[
+.font120[
 Predator population will be stable when the number of preys equals the ratio of the predator's mortality rate and its attack times conversion rate.
 ]
 ]
@@ -209,7 +209,7 @@ Predator population will be stable when the number of preys equals the ratio of 
 --
 
 .pull-right[
-.font150[
+.font120[
 Prey population will be stable when the number of predators equals the ratio of the prey's growth rate and predator's attack rate.
 ]
 ]

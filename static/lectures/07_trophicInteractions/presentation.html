@@ -13,9 +13,15 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Trophic interactions
+]
+.author[
 ### Daijiang Li
+]
+.institute[
 ### LSU
+]
 
 ---
 
@@ -151,7 +157,7 @@ class: center
 
 --
 
-.font150[
+.font130[
 `\(aR\)` is the .red[functional response] of the predator (rate of prey capture as a function of prey abundance); in this case linear, i.e., prey capture increases at a constant rate as prey density increases
 
 `\(caC\)` reflects the numerical response of the predator population – the per capita growth rate of the predator pop. as a function of the prey pop.
@@ -202,7 +208,7 @@ C* &amp; = \frac{r}{a}
 --
 
 .pull-left[
-.font150[
+.font120[
 Predator population will be stable when the number of preys equals the ratio of the predator's mortality rate and its attack times conversion rate.
 ]
 ]
@@ -210,7 +216,7 @@ Predator population will be stable when the number of preys equals the ratio of 
 --
 
 .pull-right[
-.font150[
+.font120[
 Prey population will be stable when the number of predators equals the ratio of the prey's growth rate and predator's attack rate.
 ]
 ]
@@ -575,7 +581,6 @@ class: center, middle
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="https://platform.twitter.com/widgets.js"></script>
 <script src="../macro.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
@@ -621,6 +626,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
