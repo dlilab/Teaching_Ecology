@@ -371,6 +371,22 @@ class: right, middle, inverse
 
 <br>
 
+## .blue[Why predators don't kill all their prey?]
+
+] 
+
+---
+background-image: url('figs/prime.png')
+background-position: 80% 100%
+class: right, middle, inverse
+
+.pull-right[
+<br>
+
+<br>
+
+<br>
+
 ## .blue[Why predators don't kill all their prey?] .red[Because they can’t.]
 ] 
 
