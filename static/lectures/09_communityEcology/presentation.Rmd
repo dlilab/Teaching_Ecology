@@ -214,6 +214,19 @@ $$S_{est} = S_{obs} + \left( \frac{(f_{1})^{2}}{2f_{2}}\right)$$
 ]
 
 ---
+class: middle, left
+
+.font200[
+If a sample of an ecological community results in the following abundances of species, what is the estimated overall richness of the community? Sp A (200 individuals), Sp B (140 individuals), Sp C (98 individuals), Sp D (30 individuals), Sp E (2 individuals), Sp F (2 individuals), Sp G (1 individual), Sp H (1 individual).
+
+A. 8  
+B. 9  
+C. 10  
+D. 11
+]
+
+
+---
 
 # Problem of Species Richness
 

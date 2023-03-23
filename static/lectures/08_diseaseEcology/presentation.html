@@ -13,9 +13,15 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Host-parasite interactions
+]
+.author[
 ### Daijiang Li
+]
+.institute[
 ### LSU
+]
 
 ---
 
@@ -521,10 +527,36 @@ class: left, middle, inverse
 
 ## .red[How does this lecture help you in]
 ## .red[understanding the current pandemic?]
+
+---
+class: middle, left
+
+.font200[
+
+In the SIR model, if S is 99 and I is 1 (total population is 100) at the beginning of a disease infection, which has R0 of 3 and average infectious period of 7 days. What is the transmission rate (beta)?  
+
+A. 0.1  
+B. 0.2  
+C. 0.004   
+D. 2
+]
+
+---
+class: middle, left
+
+.font200[
+
+If transmission rate is 0.5 and recovery rate is 0.3, what is the herd immunity threshold (let S to be 1)?
+
+A. 0.15  
+B. 0.57  
+C. 0.40   
+D. 0.78
+]
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="https://platform.twitter.com/widgets.js"></script>
 <script src="../macro.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
@@ -570,6 +602,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
