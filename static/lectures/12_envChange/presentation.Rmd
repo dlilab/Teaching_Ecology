@@ -206,6 +206,8 @@ Mauna Loa Observatory, Hawaii (Scripps UCSD)
 .center[.font200[.red[418.81]]]
 ]
 
+https://gml.noaa.gov/ccgg/trends/weekly.html 
+
 ]
 
 ???
