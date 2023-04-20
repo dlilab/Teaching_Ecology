@@ -153,9 +153,10 @@ the claim that macroecology can be explained by individuals and population dynam
 
 ---
 
-# Species-area relationships
+# Species-area relationships ( $S = cA^z$ )
 
 ![:scale 80%](figs/sar.svg)
+
 
 ---
 

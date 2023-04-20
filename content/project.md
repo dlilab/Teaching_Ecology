@@ -42,5 +42,8 @@ Here are a final set of instructions for your class presentations. The presentat
 7. **Order of presentations**. Presentations will be given over a two-day period. To keep things as fair as possible, I will randomly determine the order of presentation. You will all need to be prepared to give your presentations on the first day. 
 8. **Presentations & Final Exam**. The material presented by your classmates will be treated like any other lecture material and, thus, could be included on the final exam. You will only be responsible for the content of the presentations given during your assigned section of the class. 
 
+## Examples
+
+[Here](https://lsu.box.com/s/reva0gpmufm8vjlxv1kk2vctypbjxiwb) are a couple of previous presentations that were reasonably good. For the slides, I recommend you _not_ to stack lots of text within each slide. You want your audience to listen to you, not to read the text all the time.
 
 
