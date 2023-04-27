@@ -21,7 +21,7 @@ In addition, I have also created a project named as [**LSU BIOL 4253 Principles 
     ![](../images/inat_ios.jpg)
 
     1. The first part is to see potential identification of the observation; the app normally is quite good with the identifications at least to the genus level. Click on the top suggestions, look at the descriptions and pictures, then select the most matched suggestion in your opinion
-    2. Mark whether your observation is Captive or Cultivated. Default is `No`; Captive or Cultivated species should be marked as "Yes" (No pets please, no container plants) 
+    2. Mark whether your observation is Captive or Cultivated. Default is `No`; Captive or Cultivated species should be marked as "Yes" (No pets please, no container plants, no garden plants, no animals from zoo) 
     3. Make sure the location information is correct
     4. If you can select the `LSU BIOL 4253 Principles of Ecology` project, do it. Otherwise, no worries
 
@@ -40,9 +40,9 @@ If you use an iPhone, you can go to https://www.inaturalist.org/home once you ha
 
 ## Points
 
-**The maximum extra points you can get is 10**. To get these 10 points, you need to record at least 100 species (0.1 point per species; **they can be any species, plants, insects, birds, mammals, worms, etc.**). You need 100 species, not just 100 observations to get the full extra credit; this is because sometimes multiple observations can be about the same species. Don't just record them around LSU. Try to go out a little bit further. May be take a hike around a park, etc.
+**The maximum extra points you can get is 10**. To get these 10 points, you need to record at least 50 species (0.2 point per species; **they can be any wild species, plants, insects, birds, mammals, worms, etc.**). You need 50 species, not just 50 observations to get the full extra credit; this is because sometimes multiple observations can be about the same species. Don't just record them around LSU. Try to go out a little bit further. May be take a hike around a park, etc.
 
-I will calculate your extra score using the **0.1 point per species rule** (maximum at 10, but don't let this stop your recording!). If you recorded 50 species, you can get 5 points. **After done, you need to email me your iNaturalist account name and a screenshot of the summary of your observations (with number of observations, number of species, etc.) so that I can calculate your extra points**. 
+I will calculate your extra score using the **0.2 point per species rule** (maximum at 10, but don't let this stop your recording!). If you recorded 25 species, you can get 5 points. **After done, you need to email me your iNaturalist account name and a screenshot of the summary of your observations (with number of observations, number of species, etc.) so that I can calculate your extra points**. 
 
 This extra scores will be added to your **total scores** before taking the average to get your final score. For example, if your total score after dropping your lowest exam score (3 exams + final project) is 370, and if you get all 10 extra points, then your total score would be 370 + 10 = 380; and your final score would be 380/4 = 95. 
 
